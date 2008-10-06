@@ -4,7 +4,7 @@ package life;
  */
 public interface RuleHandler
 {
-    boolean handleRule();
+    void applyRule(Cell cell);
 
     boolean isEligible(Cell cell);
 }

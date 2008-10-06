@@ -61,7 +61,7 @@ public class GameBoard
         {
             if (rule.isEligible(cell))
             {
-                cell.setAlive(rule.handleRule());
+                rule.applyRule(cell);
             }
         }
     }
@@ -114,9 +114,9 @@ public class GameBoard
 
     class DieIfLessThanTwoLiveNeighboursRule implements RuleHandler
     {
-        public boolean handleRule()
+        public void applyRule(Cell cell)
         {
-            return false;
+            cell.setAlive(false);
         }
 
         public boolean isEligible(Cell cell)
@@ -127,9 +127,9 @@ public class GameBoard
 
     class DieIfMoreThanThreeLiveNeighboursRule implements RuleHandler
     {
-        public boolean handleRule()
+        public void applyRule(Cell cell)
         {
-            return false;
+            cell.setAlive(false);
         }
 
         public boolean isEligible(Cell cell)
@@ -141,9 +141,9 @@ public class GameBoard
     class ComeToLifeIfExactlyThreeLiveNeighboursRule implements RuleHandler
     {
 
-        public boolean handleRule()
+        public void applyRule(Cell cell)
         {
-            return true;
+            cell.setAlive(true);
         }
 
         public boolean isEligible(Cell cell)

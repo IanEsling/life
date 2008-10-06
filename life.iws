@@ -149,7 +149,7 @@
       <file leaf-file-name="GameBoard.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="45" selection-start="2239" selection-end="2239" vertical-scroll-proportion="0.7821229">
+            <state line="135" column="60" selection-start="3392" selection-end="3392" vertical-scroll-proportion="1.6424581">
               <folding />
             </state>
           </provider>
@@ -158,7 +158,7 @@
       <file leaf-file-name="RuleHandler.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/RuleHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="77" selection-end="77" vertical-scroll-proportion="0.16759777">
+            <state line="6" column="8" selection-start="62" selection-end="62" vertical-scroll-proportion="0.16759777">
               <folding />
             </state>
           </provider>
@@ -564,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/RuleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="77" selection-end="77" vertical-scroll-proportion="0.16759777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="63" selection-start="990" selection-end="990" vertical-scroll-proportion="0.29608938">
@@ -578,9 +571,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/RuleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="62" selection-end="62" vertical-scroll-proportion="0.16759777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="45" selection-start="2239" selection-end="2239" vertical-scroll-proportion="0.7821229">
+        <state line="135" column="60" selection-start="3392" selection-end="3392" vertical-scroll-proportion="1.6424581">
           <folding />
         </state>
       </provider>
