@@ -16,9 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="&#10;# Brief commit desciption here&#10;&#10;# Full commit description here (comment lines starting with '#' will not be included)&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/life/Cell.java" afterPath="$PROJECT_DIR$/src/life/Cell.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/life.iws" afterPath="$PROJECT_DIR$/life.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/life/TestGameBoard.java" afterPath="$PROJECT_DIR$/test/life/TestGameBoard.java" />
     </list>
     <list name="Rejected commit: Default" comment="make cells listen to neighbours for state changes" />
     <ignored path="life.iws" />
@@ -156,7 +154,7 @@
       <file leaf-file-name="Cell.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="51" selection-start="398" selection-end="398" vertical-scroll-proportion="0.619137">
+            <state line="16" column="100" selection-start="275" selection-end="275" vertical-scroll-proportion="0.4502814">
               <folding />
             </state>
           </provider>
@@ -406,10 +404,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1024" height="718" extended-state="0" />
+    <frame x="0" y="25" width="1024" height="718" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272059" order="8" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
@@ -542,7 +540,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="51" selection-start="398" selection-end="398" vertical-scroll-proportion="0.619137">
+        <state line="16" column="100" selection-start="275" selection-end="275" vertical-scroll-proportion="0.4502814">
           <folding />
         </state>
       </provider>
