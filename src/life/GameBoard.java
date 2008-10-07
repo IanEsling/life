@@ -32,6 +32,29 @@ public class GameBoard
     {
         this.totalRows = rows;
         this.totalColumns = columns;
+        createBoard(rows, columns);
+        makeCellsNeighbourAware();
+    }
+
+    private void makeCellsNeighbourAware()
+    {
+        for (Cell cell : board)
+        {
+            for (int row = startIndex(cell.getRow()); row <= endRow(cell.getRow()); row++)
+            {
+                for (int column = startIndex(cell.getColumn()); column <= endColumn(cell.getColumn()); column++)
+                {
+                    if (!(cell.getRow() == row && cell.getColumn() == column))
+                    {
+                        cell.neighbouringCell(getCell(row, column));
+                    }
+                }
+            }
+        }
+    }
+
+    private void createBoard(int rows, int columns)
+    {
         board = new ArrayList<Cell>();
         for (int row = 1; row <= rows; row++)
         {
@@ -44,15 +67,14 @@ public class GameBoard
 
     void tick()
     {
-        List<Cell> newBoard = new ArrayList<Cell>();
-
         for (Cell cell : board)
         {
-            Cell newCell = cell.copy();
-            newBoard.add(newCell);
-            applyRules(newCell);
+            applyRules(cell);
         }
-        board = newBoard;
+        for (Cell cell : board)
+        {
+            cell.applyNewState();
+        }
     }
 
     private void applyRules(Cell cell)
@@ -64,19 +86,6 @@ public class GameBoard
                 rule.applyRule(cell);
             }
         }
-    }
-
-    int numberOfAliveNeighbours(int cellRow, int cellColumn)
-    {
-        int totalAliveNeighbours = 0;
-        for (int row = startIndex(cellRow); row <= endRow(cellRow); row++)
-        {
-            for (int column = startIndex(cellColumn); column <= endColumn(cellColumn); column++)
-            {
-                if (getCell(row, column).isAlive() && !(cellRow == row && cellColumn == column)) totalAliveNeighbours++;
-            }
-        }
-        return totalAliveNeighbours;
     }
 
     Cell getCell(int row, int column)
@@ -116,12 +125,12 @@ public class GameBoard
     {
         public void applyRule(Cell cell)
         {
-            cell.setAlive(false);
+            cell.newState(false);
         }
 
         public boolean isEligible(Cell cell)
         {
-            return cell.isAlive() && (numberOfAliveNeighbours(cell.getRow(), cell.getColumn()) < 2);
+            return cell.isAlive() && (cell.getNumberOfLiveNeighbours() < 2);
         }
     }
 
@@ -129,12 +138,12 @@ public class GameBoard
     {
         public void applyRule(Cell cell)
         {
-            cell.setAlive(false);
+            cell.newState(false);
         }
 
         public boolean isEligible(Cell cell)
         {
-            return cell.isAlive() && (numberOfAliveNeighbours(cell.getRow(), cell.getColumn()) > 3);
+            return cell.isAlive() && (cell.getNumberOfLiveNeighbours() > 3);
         }
     }
 
@@ -143,12 +152,12 @@ public class GameBoard
 
         public void applyRule(Cell cell)
         {
-            cell.setAlive(true);
+            cell.newState(true);
         }
 
         public boolean isEligible(Cell cell)
         {
-            return !cell.isAlive() && numberOfAliveNeighbours(cell.getRow(), cell.getColumn()) == 3;
+            return !cell.isAlive() && cell.getNumberOfLiveNeighbours() == 3;
         }
     }
 }
