@@ -16,15 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="&#10;# Brief commit desciption here&#10;&#10;# Full commit description here (comment lines starting with '#' will not be included)&#10;&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/life.iws" afterPath="$PROJECT_DIR$/life.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/life.ipr" afterPath="$PROJECT_DIR$/life.ipr" />
-    </list>
-    <list name="Rejected commit: Default" comment="make cells listen to neighbours for state changes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/life/Cell.java" afterPath="$PROJECT_DIR$/src/life/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/life/TestCell.java" afterPath="$PROJECT_DIR$/test/life/TestCell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/life.iws" afterPath="$PROJECT_DIR$/life.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/life/TestGameBoard.java" afterPath="$PROJECT_DIR$/test/life/TestGameBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/life/GameBoard.java" afterPath="$PROJECT_DIR$/src/life/GameBoard.java" />
     </list>
+    <list name="Rejected commit: Default" comment="make cells listen to neighbours for state changes" />
     <ignored path="life.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
@@ -131,7 +127,7 @@
       <file leaf-file-name="TestGameBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="1.8028846">
+            <state line="101" column="52" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,10 +142,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCell.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestCell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="39" selection-start="652" selection-end="652" vertical-scroll-proportion="0.45402297">
+            <state line="37" column="74" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,10 +153,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Cell.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="4" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0">
+            <state line="22" column="51" selection-start="398" selection-end="398" vertical-scroll-proportion="0.619137">
               <folding />
             </state>
           </provider>
@@ -169,7 +165,7 @@
       <file leaf-file-name="GameBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="19" selection-start="497" selection-end="497" vertical-scroll-proportion="1.0952381">
+            <state line="75" column="0" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -411,11 +407,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1024" height="718" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31282952" order="8" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272059" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" order="1" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55514705" order="3" />
@@ -430,7 +426,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53860295" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5606618" order="2" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
@@ -521,33 +517,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
+    <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="4" selection-start="1519" selection-end="1519" vertical-scroll-proportion="0.0">
+        <state line="37" column="74" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="0" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="685" selection-end="685" vertical-scroll-proportion="1.8028846">
+        <state line="101" column="52" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="497" selection-end="497" vertical-scroll-proportion="1.0952381">
+        <state line="22" column="51" selection-start="398" selection-end="398" vertical-scroll-proportion="0.619137">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="39" selection-start="652" selection-end="652" vertical-scroll-proportion="0.45402297">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -98,6 +98,23 @@ public class TestGameBoard
         assertLiveCells();
     }
 
+    @Test
+    public void numberOfLiveNeighbours()
+    {
+        setCell(1, 1);
+        setCell(1, 2);
+        assertEquals("1,1 should have 1 neighbour", 1, gameboard.getCell(1,1).getNumberOfLiveNeighbours());
+        assertEquals("1,2 should have 1 neighbour", 1, gameboard.getCell(1,2).getNumberOfLiveNeighbours());
+        gameboard.tick();
+        assertLiveCells();
+        assertEquals("after 1 tick 1,1 should have 1 neighbour", 1, gameboard.getCell(1,1).getNumberOfLiveNeighbours());
+        assertEquals("after 1 tick 1,2 should have 1 neighbour", 1, gameboard.getCell(1,2).getNumberOfLiveNeighbours());
+        gameboard.tick();
+        assertLiveCells();
+        assertEquals("after 2 ticks 1,1 should have 1 neighbour", 1, gameboard.getCell(1,1).getNumberOfLiveNeighbours());
+        assertEquals("after 2 ticks 1,2 should have 1 neighbour", 1, gameboard.getCell(1,2).getNumberOfLiveNeighbours());
+    }
+
     private void assertLiveCells()
     {
         for (Cell cell : gameboard.getBoard())

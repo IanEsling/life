@@ -8,7 +8,8 @@ public class Cell
 {
     List<Cell> neighbours = new ArrayList<Cell>();
     final int row, column;
-    boolean alive, newState;
+    boolean alive;
+    Boolean newState;
     int numberOfLiveNeighbours;
 
     Cell(int row, int column)
@@ -16,7 +17,6 @@ public class Cell
         this.row = row;
         this.column = column;
         this.alive = false;
-        this.newState = false;
         this.numberOfLiveNeighbours = 0;
     }
 
@@ -38,7 +38,12 @@ public class Cell
     void setAlive(boolean alive)
     {
         this.alive = alive;
-        this.newState = alive;
+        this.newState = null;
+        tellNeighbours(alive);
+    }
+
+    private void tellNeighbours(boolean alive)
+    {
         for (Cell cell : neighbours)
         {
             if (alive)
@@ -54,14 +59,7 @@ public class Cell
 
     void neighbourHasDied()
     {
-        if (numberOfLiveNeighbours <= 0)
-        {
-            numberOfLiveNeighbours = 0;
-        }
-        else
-        {
-            --numberOfLiveNeighbours;
-        }
+        --numberOfLiveNeighbours;
     }
 
     void neighbourComeToLife()
@@ -86,7 +84,7 @@ public class Cell
 
     void applyNewState()
     {
-        setAlive(newState);
+        if (newState!=null) setAlive(newState);
     }
 
     public boolean equals(Object o)
