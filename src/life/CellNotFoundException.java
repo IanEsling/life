@@ -4,8 +4,8 @@ package life;
  */
 public class CellNotFoundException extends RuntimeException
 {
-    CellNotFoundException(int row, int column)
+    CellNotFoundException(Cell cell)
     {
-        super("cell not found, row "+row+", column "+column);
+        super("cell not found, row "+cell.getRow()+", column "+cell.getColumn());
     }
 }

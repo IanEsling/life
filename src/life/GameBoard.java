@@ -46,7 +46,7 @@ public class GameBoard
                 {
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
-                        cell.neighbouringCell(getCell(row, column));
+                        cell.neighbouringCell(getCell(new Cell(row, column)));
                     }
                 }
             }
@@ -88,13 +88,13 @@ public class GameBoard
         }
     }
 
-    Cell getCell(int row, int column)
+    Cell getCell(Cell cell)
     {
-        if (!board.contains(new Cell(row, column)))
+        if (!board.contains(cell))
         {
-            throw new CellNotFoundException(row, column);
+            throw new CellNotFoundException(cell);
         }
-        return board.get(board.indexOf(new Cell(row, column)));
+        return board.get(board.indexOf(cell));
     }
 
     private int endColumn(int cellColumn)
@@ -121,43 +121,4 @@ public class GameBoard
         rules.add(new ComeToLifeIfExactlyThreeLiveNeighboursRule());
     }
 
-    class DieIfLessThanTwoLiveNeighboursRule implements RuleHandler
-    {
-        public void applyRule(Cell cell)
-        {
-            cell.newState(false);
-        }
-
-        public boolean isEligible(Cell cell)
-        {
-            return cell.isAlive() && (cell.getNumberOfLiveNeighbours() < 2);
-        }
-    }
-
-    class DieIfMoreThanThreeLiveNeighboursRule implements RuleHandler
-    {
-        public void applyRule(Cell cell)
-        {
-            cell.newState(false);
-        }
-
-        public boolean isEligible(Cell cell)
-        {
-            return cell.isAlive() && (cell.getNumberOfLiveNeighbours() > 3);
-        }
-    }
-
-    class ComeToLifeIfExactlyThreeLiveNeighboursRule implements RuleHandler
-    {
-
-        public void applyRule(Cell cell)
-        {
-            cell.newState(true);
-        }
-
-        public boolean isEligible(Cell cell)
-        {
-            return !cell.isAlive() && cell.getNumberOfLiveNeighbours() == 3;
-        }
-    }
 }

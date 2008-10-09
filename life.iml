@@ -15,6 +15,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="junit" level="application" />
     <orderEntry type="library" name="junit" level="application" />
+    <orderEntryProperties />
   </component>
 </module>
 
