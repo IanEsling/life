@@ -1,4 +1,6 @@
-package life;
+package life.rules;
+
+import life.*;
 
 /**
  */

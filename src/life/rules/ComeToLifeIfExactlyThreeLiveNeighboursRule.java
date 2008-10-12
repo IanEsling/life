@@ -1,8 +1,10 @@
-package life;
+package life.rules;
+
+import life.*;
 
 /**
  */
-class ComeToLifeIfExactlyThreeLiveNeighboursRule implements RuleHandler
+public class ComeToLifeIfExactlyThreeLiveNeighboursRule implements RuleHandler
 {
 
     public void applyRule(Cell cell)

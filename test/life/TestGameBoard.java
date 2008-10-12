@@ -5,6 +5,8 @@ import org.junit.*;
 
 import java.util.*;
 
+import life.rules.*;
+
 /**
  */
 public class TestGameBoard

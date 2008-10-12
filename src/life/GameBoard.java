@@ -1,5 +1,7 @@
 package life;
 
+import life.rules.*;
+
 import java.util.*;
 
 /**

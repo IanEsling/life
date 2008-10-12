@@ -1,8 +1,10 @@
-package life;
+package life.rules;
+
+import life.*;
 
 /**
  */
-class DieIfLessThanTwoLiveNeighboursRule implements RuleHandler
+public class DieIfLessThanTwoLiveNeighboursRule implements RuleHandler
 {
     public void applyRule(Cell cell)
     {

@@ -83,10 +83,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameBoard.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="36" selection-start="2156" selection-end="2156" vertical-scroll-proportion="2.716763">
+            <state line="107" column="23" selection-start="2484" selection-end="2484" vertical-scroll-proportion="0.87113404">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Life.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/life/Life.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="50" selection-start="827" selection-end="827" vertical-scroll-proportion="2.0103092">
               <folding />
             </state>
           </provider>
@@ -95,7 +104,7 @@
       <file leaf-file-name="CellNotFoundException.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/CellNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="79" selection-start="207" selection-end="207" vertical-scroll-proportion="0.23121387">
+            <state line="8" column="79" selection-start="207" selection-end="207" vertical-scroll-proportion="0.6185567">
               <folding />
             </state>
           </provider>
@@ -104,34 +113,43 @@
       <file leaf-file-name="TestGameBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="74" selection-start="185" selection-end="185" vertical-scroll-proportion="0.29761904">
+            <state line="15" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.083798885">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ComeToLifeIfExactlyThreeLiveNeighboursRule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/ComeToLifeIfExactlyThreeLiveNeighboursRule.java">
+        <entry file="file://$PROJECT_DIR$/src/life/rules/ComeToLifeIfExactlyThreeLiveNeighboursRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.115606934">
+            <state line="6" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.46391752">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DieIfMoreThanThreeLiveNeighboursRule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/DieIfMoreThanThreeLiveNeighboursRule.java">
+        <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfMoreThanThreeLiveNeighboursRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.115606934">
+            <state line="6" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.46391752">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DieIfLessThanTwoLiveNeighboursRule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/DieIfLessThanTwoLiveNeighboursRule.java">
+        <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfLessThanTwoLiveNeighboursRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.115606934">
+            <state line="6" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.46391752">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="4" selection-start="499" selection-end="499" vertical-scroll-proportion="0.077319585">
               <folding />
             </state>
           </provider>
@@ -245,25 +263,18 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.TestGameBoard">
-    <tempConfiguration default="false" name="TestGameBoard" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <pattern value="life.*" />
-      <module name="life" />
+  <component name="RunManager" selected="Application.Life">
+    <tempConfiguration default="false" name="Life" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" value="life.Life" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="life" />
-      <option name="MAIN_CLASS_NAME" value="life.TestGameBoard" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
+      <module name="life" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -271,6 +282,70 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
+    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -293,40 +368,8 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestGameBoard" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Life" />
     </list>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
@@ -379,7 +422,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1024" height="718" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
@@ -391,7 +434,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" order="8" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32570422" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
@@ -402,7 +445,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55985916" order="2" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55985916" order="2" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -474,58 +517,65 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/life/RuleHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/life/rules/RuleHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
+    <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="100" selection-start="275" selection-end="275" vertical-scroll-proportion="0.028142588">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/DieIfLessThanTwoLiveNeighboursRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.115606934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/DieIfMoreThanThreeLiveNeighboursRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.115606934">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ComeToLifeIfExactlyThreeLiveNeighboursRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="0.115606934">
+        <state line="107" column="23" selection-start="2484" selection-end="2484" vertical-scroll-proportion="0.87113404">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/CellNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="79" selection-start="207" selection-end="207" vertical-scroll-proportion="0.23121387">
+        <state line="8" column="79" selection-start="207" selection-end="207" vertical-scroll-proportion="0.6185567">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="74" selection-start="185" selection-end="185" vertical-scroll-proportion="0.29761904">
+        <state line="15" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.083798885">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/life/rules/ComeToLifeIfExactlyThreeLiveNeighboursRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="36" selection-start="2156" selection-end="2156" vertical-scroll-proportion="2.716763">
+        <state line="6" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.46391752">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfMoreThanThreeLiveNeighboursRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.46391752">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfLessThanTwoLiveNeighboursRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.46391752">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="4" selection-start="499" selection-end="499" vertical-scroll-proportion="0.077319585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/Life.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="50" selection-start="827" selection-end="827" vertical-scroll-proportion="2.0103092">
           <folding />
         </state>
       </provider>

@@ -12,7 +12,7 @@ public class Cell
     Boolean newState;
     int numberOfLiveNeighbours;
 
-    Cell(int row, int column)
+    public Cell(int row, int column)
     {
         this.row = row;
         this.column = column;
@@ -30,7 +30,7 @@ public class Cell
         return column;
     }
 
-    boolean isAlive()
+    public boolean isAlive()
     {
         return alive;
     }
@@ -67,7 +67,7 @@ public class Cell
         ++numberOfLiveNeighbours;
     }
 
-    int getNumberOfLiveNeighbours()
+    public int getNumberOfLiveNeighbours()
     {
         return numberOfLiveNeighbours;
     }
@@ -77,7 +77,7 @@ public class Cell
         neighbours.add(cell);
     }
 
-    void newState(boolean newState)
+    public void newState(boolean newState)
     {
         this.newState = newState;
     }
