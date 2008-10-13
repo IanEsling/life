@@ -4,9 +4,9 @@ import java.util.*;
 
 /**
  */
-public class Cell
+public class Cell implements CellListener
 {
-    List<Cell> neighbours = new ArrayList<Cell>();
+    List<CellListener> listeningCells = new ArrayList<CellListener>();
     final int row, column;
     boolean alive;
     Boolean newState;
@@ -44,7 +44,7 @@ public class Cell
 
     private void tellNeighbours(boolean alive)
     {
-        for (Cell cell : neighbours)
+        for (CellListener cell : listeningCells)
         {
             if (alive)
             {
@@ -57,12 +57,12 @@ public class Cell
         }
     }
 
-    void neighbourHasDied()
+    public void neighbourHasDied()
     {
         --numberOfLiveNeighbours;
     }
 
-    void neighbourComeToLife()
+    public void neighbourComeToLife()
     {
         ++numberOfLiveNeighbours;
     }
@@ -72,9 +72,9 @@ public class Cell
         return numberOfLiveNeighbours;
     }
 
-    void neighbouringCell(Cell cell)
+    void cellListener(CellListener cellListener)
     {
-        neighbours.add(cell);
+        listeningCells.add(cellListener);
     }
 
     public void newState(boolean newState)
@@ -108,6 +108,6 @@ public class Cell
     public String toString()
     {
         return "Cell row: " + row + ", column: " + column + ", isAlive: " + isAlive() + ", listening to " +
-                neighbours.size() + " neighbours";
+                listeningCells.size() + " listeningCells";
     }
 }

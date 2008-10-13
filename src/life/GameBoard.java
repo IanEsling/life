@@ -48,7 +48,7 @@ public class GameBoard
                 {
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
-                        cell.neighbouringCell(getCell(new Cell(row, column)));
+                        cell.cellListener(getCell(new Cell(row, column)));
                     }
                 }
             }

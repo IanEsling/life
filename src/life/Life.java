@@ -2,37 +2,38 @@ package life;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.*;
 import java.awt.image.*;
+import java.util.*;
 
-/**
- */
 public class Life
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws InterruptedException
     {
         JFrame life = new JFrame();
-        life.add(getCanvas());
+        GameBoard board = new GameBoard(100,100);
+        GameCanvas canvas = new GameCanvas(board);
+        life.add(canvas);
         life.setTitle("Game of Life");
-        life.pack();        
+        life.pack();
         life.setSize(500, 500);
         life.setVisible(true);
+        setRandomCellsAlive(board);
+        canvas.paint(canvas.getGraphics());
+        while (true)
+        {
+            board.tick();
+            canvas.repaint();
+            Thread.sleep(500);
+        }
     }
 
-    private static Canvas getCanvas()
+    static void setRandomCellsAlive(GameBoard board)
     {
-        Canvas canvas = new Canvas(){
-            public void paint(Graphics g)
-            {
-                Graphics2D g2d = (Graphics2D)g;
-                BufferedImage bi = new BufferedImage(50, 50, BufferedImage.TYPE_INT_RGB);
-                bi.getGraphics().setColor(Color.WHITE);
-                bi.getGraphics().fillRect(0, 0, 50, 50);
-                g2d.drawImage(bi, 200, 200, this);
-            }
-        };
-        canvas.setSize(500, 500);
-        canvas.setBackground(Color.BLACK);
-        return canvas;
+        for (int i = 0; i < board.getBoard().size()/10;i++)
+        {
+            int cell = (int)(Math.random()*board.getBoard().size());
+            System.out.println("setting cell number "+cell+" to alive");
+            board.getBoard().get(cell).setAlive(true);
+        }
     }
 }

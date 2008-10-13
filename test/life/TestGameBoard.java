@@ -55,10 +55,10 @@ public class TestGameBoard
         assertEquals("1,2 should have 1 alive neighbour", 1, gameboard.getCell(new Cell(1, 2)).getNumberOfLiveNeighbours());
         assertEquals("2,2 should have 1 alive neighbour", 1, gameboard.getCell(new Cell(2, 2)).getNumberOfLiveNeighbours());
         assertEquals("2,1 should have 1 alive neighbour", 1, gameboard.getCell(new Cell(2, 1)).getNumberOfLiveNeighbours());
-        assertEquals("2,3 should have 0 alive neighbours", 0, gameboard.getCell(new Cell(2, 3)).getNumberOfLiveNeighbours());
-        assertEquals("10,10 should have 0 alive neighbours", 0, gameboard.getCell(new Cell(10, 10)).getNumberOfLiveNeighbours());
+        assertEquals("2,3 should have 0 alive listeningCells", 0, gameboard.getCell(new Cell(2, 3)).getNumberOfLiveNeighbours());
+        assertEquals("10,10 should have 0 alive listeningCells", 0, gameboard.getCell(new Cell(10, 10)).getNumberOfLiveNeighbours());
         setCell(1, 3);
-        assertEquals("2,2 should have 2 alive neighbours", 2, gameboard.getCell(new Cell(2, 2)).getNumberOfLiveNeighbours());
+        assertEquals("2,2 should have 2 alive listeningCells", 2, gameboard.getCell(new Cell(2, 2)).getNumberOfLiveNeighbours());
     }
 
     @Test(expected = CellNotFoundException.class)
