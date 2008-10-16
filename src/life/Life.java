@@ -11,7 +11,7 @@ public class Life
     {
         JFrame life = new JFrame();
         GameBoard board = new GameBoard(100,100);
-        GameCanvas canvas = new GameCanvas(board);
+        GameCanvas canvas = new GameCanvas(board, 4);
         life.add(canvas);
         life.setTitle("Game of Life");
         life.pack();
@@ -23,13 +23,13 @@ public class Life
         {
             board.tick();
             canvas.repaint();
-            Thread.sleep(500);
+            Thread.sleep(250);
         }
     }
 
     static void setRandomCellsAlive(GameBoard board)
     {
-        for (int i = 0; i < board.getBoard().size()/15;i++)
+        for (int i = 0; i < board.getBoard().size()/10;i++)
         {
             int cell = (int)(Math.random()*board.getBoard().size());
             System.out.println("setting cell number "+cell+" to alive");

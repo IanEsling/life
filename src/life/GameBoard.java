@@ -48,6 +48,7 @@ public class GameBoard
                 {
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
+                        System.out.println("adding new listener to cell "+row+","+column);
                         cell.cellListener(getCell(new Cell(row, column)));
                     }
                 }
@@ -62,6 +63,7 @@ public class GameBoard
         {
             for (int column = 1; column <= columns; column++)
             {
+                System.out.println("adding new cell "+row+","+column+" to board");
                 board.add(new Cell(row, column));
             }
         }
