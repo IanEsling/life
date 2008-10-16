@@ -5,7 +5,7 @@ import java.awt.*;
 
 /**
  */
-class CellImage extends BufferedImage implements CellListener
+class CellImage extends BufferedImage
 {
     public static final Integer cellImageWidth = 3;
     public static final Integer cellImageHeight = 3;
@@ -15,19 +15,6 @@ class CellImage extends BufferedImage implements CellListener
     {
         super(cellImageWidth, cellImageHeight, BufferedImage.TYPE_INT_RGB);
         this.cell = cell;
-        cell.cellListener(this);
-    }
-
-    public void draw()
-    {
-        for (int row = 0; row < cellImageHeight; row++)
-        {
-            for (int col = 0; col < cellImageWidth; col++)
-            {
-//                this.getRaster().ssetPixel(row, col, getColour().);
-            }
-        }
-        setData(getRaster());
     }
 
     public Color getColour()
@@ -38,15 +25,5 @@ class CellImage extends BufferedImage implements CellListener
     public Cell getCell()
     {
         return cell;
-    }
-
-    public void neighbourComeToLife()
-    {
-        draw();
-    }
-
-    public void neighbourHasDied()
-    {
-        draw();
     }
 }
