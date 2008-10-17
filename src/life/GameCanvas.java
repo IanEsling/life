@@ -45,11 +45,8 @@ public class GameCanvas extends Canvas
     {
         for (Cell cell : board.getBoard())
         {
-            canvasImage.setRGB((cell.getColumn()-1) * pixelsSquarePerCell,
-                    (cell.getRow() - 1) * pixelsSquarePerCell,
-                    pixelsSquarePerCell, pixelsSquarePerCell,
-                    cell.isAlive() ? whiteArray : blackArray,
-                    0,0);
+            CellImage ci = new CellImage(cell);
+            ci.setImage(canvasImage);
         }
     }
 
@@ -65,9 +62,7 @@ public class GameCanvas extends Canvas
 
     public void paint(Graphics g)
     {
-        paint();
         Graphics2D g2d = (Graphics2D) g;
         g2d.drawImage(canvasImage, 0, 0, this);
-
     }
 }
