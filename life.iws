@@ -111,10 +111,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Life.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Life.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/life/Life.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="51" selection-start="336" selection-end="336" vertical-scroll-proportion="0.115606934">
+            <state line="12" column="45" selection-start="280" selection-end="280" vertical-scroll-proportion="0.2525773">
               <folding />
             </state>
           </provider>
@@ -123,18 +123,16 @@
       <file leaf-file-name="GameCanvas.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/GameCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="37" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.3468208">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="42" column="37" selection-start="1025" selection-end="1025" vertical-scroll-proportion="1.701031">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BufferedImage.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BufferedImage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/BufferedImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="993" column="58" selection-start="41192" selection-end="41192" vertical-scroll-proportion="0.2177264">
+            <state line="993" column="58" selection-start="41192" selection-end="41192" vertical-scroll-proportion="0.077319585">
               <folding />
             </state>
           </provider>
@@ -143,7 +141,7 @@
       <file leaf-file-name="ColorModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/ColorModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="902" column="18" selection-start="40731" selection-end="40731" vertical-scroll-proportion="0.68015414">
+            <state line="902" column="18" selection-start="40731" selection-end="40731" vertical-scroll-proportion="0.077319585">
               <folding />
             </state>
           </provider>
@@ -152,7 +150,7 @@
       <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.12524085">
+            <state line="34" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.077319585">
               <folding />
             </state>
           </provider>
@@ -161,10 +159,8 @@
       <file leaf-file-name="TestGameCanvas.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="26" selection-start="689" selection-end="689" vertical-scroll-proportion="0.30635837">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="32" column="26" selection-start="689" selection-end="689" vertical-scroll-proportion="0.9484536">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,7 +168,7 @@
       <file leaf-file-name="GameBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.12524085">
+            <state line="56" column="0" selection-start="1366" selection-end="1366" vertical-scroll-proportion="1.9329897">
               <folding />
             </state>
           </provider>
@@ -181,7 +177,7 @@
       <file leaf-file-name="Raster.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/Raster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="13" selection-start="5194" selection-end="5194" vertical-scroll-proportion="-21.8632">
+            <state line="107" column="13" selection-start="5194" selection-end="5194" vertical-scroll-proportion="0.077319585">
               <folding />
             </state>
           </provider>
@@ -341,6 +337,34 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -370,18 +394,6 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -399,22 +411,6 @@
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
       </option>
-      <envs />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
       <envs />
       <method>
         <option name="Make" value="true" />
@@ -481,7 +477,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1024" height="718" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
@@ -504,7 +500,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55985916" order="2" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55985916" order="2" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -618,62 +614,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/Raster.java">
+    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/ColorModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="13" selection-start="5194" selection-end="5194" vertical-scroll-proportion="-21.8632">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.12524085">
+        <state line="902" column="18" selection-start="40731" selection-end="40731" vertical-scroll-proportion="0.077319585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.12524085">
+        <state line="34" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.077319585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="26" selection-start="689" selection-end="689" vertical-scroll-proportion="0.30635837">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/Life.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="51" selection-start="336" selection-end="336" vertical-scroll-proportion="0.115606934">
+        <state line="32" column="26" selection-start="689" selection-end="689" vertical-scroll-proportion="0.9484536">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/ColorModel.java">
+    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/Raster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="902" column="18" selection-start="40731" selection-end="40731" vertical-scroll-proportion="0.68015414">
+        <state line="107" column="13" selection-start="5194" selection-end="5194" vertical-scroll-proportion="0.077319585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/BufferedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="993" column="58" selection-start="41192" selection-end="41192" vertical-scroll-proportion="0.077319585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.3468208">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="42" column="37" selection-start="1025" selection-end="1025" vertical-scroll-proportion="1.701031">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/image/BufferedImage.java">
+    <entry file="file://$PROJECT_DIR$/src/life/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="993" column="58" selection-start="41192" selection-end="41192" vertical-scroll-proportion="0.2177264">
+        <state line="56" column="0" selection-start="1366" selection-end="1366" vertical-scroll-proportion="1.9329897">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/Life.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="280" selection-end="280" vertical-scroll-proportion="0.2525773">
           <folding />
         </state>
       </provider>

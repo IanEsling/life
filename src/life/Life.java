@@ -10,7 +10,7 @@ public class Life
     public static void main(String[] args) throws InterruptedException
     {
         JFrame life = new JFrame();
-        GameBoard board = new GameBoard(100,100);
+        GameBoard board = new GameBoard(200,200);
         GameCanvas canvas = new GameCanvas(board, 4);
         life.add(canvas);
         life.setTitle("Game of Life");

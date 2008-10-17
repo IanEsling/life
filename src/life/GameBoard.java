@@ -40,6 +40,12 @@ public class GameBoard
 
     private void makeCellsNeighbourAware()
     {
+        Cell[][] cells = new Cell[totalRows][totalColumns];
+        for (Cell cell : board)
+        {
+            cells[cell.getRow()-1][cell.getColumn()-1] = cell;
+        }
+
         for (Cell cell : board)
         {
             for (int row = startIndex(cell.getRow()); row <= endRow(cell.getRow()); row++)
@@ -49,7 +55,7 @@ public class GameBoard
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
                         System.out.println("adding new listener to cell "+row+","+column);
-                        cell.cellListener(getCell(new Cell(row, column)));
+                        cell.cellListener(cells[row-1][column-1]);
                     }
                 }
             }
