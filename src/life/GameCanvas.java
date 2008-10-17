@@ -15,11 +15,15 @@ public class GameCanvas extends Canvas
     GameCanvas(GameBoard board, int pixelsSquarePerCell)
     {
         this.pixelsSquarePerCell = pixelsSquarePerCell;
-        this.board = board;
-        setCanvasImage(board);
+        setUp(board);
     }
 
     GameCanvas(GameBoard board)
+    {
+        setUp(board);
+    }
+
+    private void setUp(GameBoard board)
     {
         this.board = board;
         setCanvasImage(board);

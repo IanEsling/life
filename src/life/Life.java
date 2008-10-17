@@ -29,7 +29,7 @@ public class Life
 
     static void setRandomCellsAlive(GameBoard board)
     {
-        for (int i = 0; i < board.getBoard().size()/30;i++)
+        for (int i = 0; i < board.getBoard().size()/23;i++)
         {
             int cell = (int)(Math.random()*board.getBoard().size());
             System.out.println("setting cell number "+cell+" to alive");

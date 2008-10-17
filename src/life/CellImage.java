@@ -8,12 +8,12 @@ import java.awt.image.*;
 class CellImage implements CellListener
 {
     BufferedImage canvas;
-    Cell cell;
-    int pixelsPerSide;
+    int pixelsPerSide, cellRow, cellColumn;
 
     CellImage(Cell cell, BufferedImage canvas, int pixelsPerSide)
     {
-        this.cell = cell;
+        cellRow = cell.getRow();
+        cellColumn = cell.getColumn();
         this.canvas = canvas;
         this.pixelsPerSide = pixelsPerSide;
         cell.cellListener(this);
@@ -21,22 +21,21 @@ class CellImage implements CellListener
 
     public void neighbourComeToLife()
     {
-        for (int row = 1;row<=pixelsPerSide;row++)
-        {
-            for (int col = 1;col<=pixelsPerSide;col++)
-            {
-                canvas.setRGB((cell.getRow() - 1) * row, (cell.getColumn() - 1) * col, Color.white.getRGB());        
-            }
-        }
+        paintPixels(Color.white);
     }
 
     public void neighbourHasDied()
+    {
+        paintPixels(Color.black);
+    }
+
+    private void paintPixels(Color colour)
     {
         for (int row = 1;row<=pixelsPerSide;row++)
         {
             for (int col = 1;col<=pixelsPerSide;col++)
             {
-                canvas.setRGB((cell.getRow() - 1) * row, (cell.getColumn() - 1) * col, Color.black.getRGB());        
+                canvas.setRGB((cellRow - 1) * row, (cellColumn - 1) * col, colour.getRGB());
             }
         }
     }
