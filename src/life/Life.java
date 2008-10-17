@@ -10,8 +10,8 @@ public class Life
     public static void main(String[] args) throws InterruptedException
     {
         JFrame life = new JFrame();
-        GameBoard board = new GameBoard(300,300);
-        GameCanvas canvas = new GameCanvas(board, 1);
+        GameBoard board = new GameBoard(200,200);
+        GameCanvas canvas = new GameCanvas(board, 3);
         life.add(canvas);
         life.setTitle("Game of Life");
         life.pack();
@@ -29,7 +29,7 @@ public class Life
 
     static void setRandomCellsAlive(GameBoard board)
     {
-        for (int i = 0; i < board.getBoard().size()/15;i++)
+        for (int i = 0; i < board.getBoard().size()/30;i++)
         {
             int cell = (int)(Math.random()*board.getBoard().size());
             System.out.println("setting cell number "+cell+" to alive");

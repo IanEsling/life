@@ -1,7 +1,7 @@
 package life;
 
-import java.awt.image.*;
 import java.awt.*;
+import java.awt.image.*;
 
 /**
  */
@@ -9,25 +9,35 @@ class CellImage implements CellListener
 {
     BufferedImage canvas;
     Cell cell;
+    int pixelsPerSide;
 
-    CellImage(Cell cell)
+    CellImage(Cell cell, BufferedImage canvas, int pixelsPerSide)
     {
         this.cell = cell;
-        cell.cellListener(this);
-    }
-
-    void setImage(BufferedImage canvas)
-    {
         this.canvas = canvas;
+        this.pixelsPerSide = pixelsPerSide;
+        cell.cellListener(this);
     }
 
     public void neighbourComeToLife()
     {
-        canvas.setRGB(cell.getRow()-1, cell.getColumn()-1, Color.white.getRGB());
+        for (int row = 1;row<=pixelsPerSide;row++)
+        {
+            for (int col = 1;col<=pixelsPerSide;col++)
+            {
+                canvas.setRGB((cell.getRow() - 1) * row, (cell.getColumn() - 1) * col, Color.white.getRGB());        
+            }
+        }
     }
 
     public void neighbourHasDied()
     {
-        canvas.setRGB(cell.getRow()-1, cell.getColumn()-1, Color.black.getRGB());
+        for (int row = 1;row<=pixelsPerSide;row++)
+        {
+            for (int col = 1;col<=pixelsPerSide;col++)
+            {
+                canvas.setRGB((cell.getRow() - 1) * row, (cell.getColumn() - 1) * col, Color.black.getRGB());        
+            }
+        }
     }
 }

@@ -29,8 +29,6 @@ public class GameCanvas extends Canvas
     {
         canvasImage = new BufferedImage(board.totalColumns*pixelsSquarePerCell,
                 board.totalRows*pixelsSquarePerCell, BufferedImage.TYPE_INT_RGB);
-        whiteArray = rgbArray(Color.white);
-        blackArray = rgbArray(Color.black);
         paint();
         setSize(canvasImage.getWidth(), canvasImage.getHeight());
         setBackground(Color.BLACK);
@@ -45,19 +43,8 @@ public class GameCanvas extends Canvas
     {
         for (Cell cell : board.getBoard())
         {
-            CellImage ci = new CellImage(cell);
-            ci.setImage(canvasImage);
+            new CellImage(cell, canvasImage, pixelsSquarePerCell);
         }
-    }
-
-    private int[] rgbArray(Color colour)
-    {
-        int[] colours = new int[pixelsSquarePerCell*pixelsSquarePerCell];
-        for (int i : colours)
-        {
-            colours[i] = colour.getRGB();
-        }
-        return colours;
     }
 
     public void paint(Graphics g)
