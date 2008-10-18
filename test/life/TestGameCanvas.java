@@ -1,11 +1,11 @@
 package life;
 
-import static junit.framework.Assert.*;
 import static junit.framework.Assert.assertEquals;
 import org.junit.*;
 
-import java.awt.image.*;
 import java.awt.*;
+
+import life.cells.*;
 
 /**
  */

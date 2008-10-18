@@ -1,6 +1,6 @@
 package life.rules;
 
-import life.*;
+import life.cells.*;
 
 /**
  */

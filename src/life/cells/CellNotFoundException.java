@@ -1,10 +1,10 @@
-package life;
+package life.cells;
 
 /**
  */
 public class CellNotFoundException extends RuntimeException
 {
-    CellNotFoundException(Cell cell)
+    public CellNotFoundException(Cell cell)
     {
         super("cell not found, row "+cell.getRow()+", column "+cell.getColumn());
     }

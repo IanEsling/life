@@ -1,5 +1,7 @@
 package life;
 
+import life.cells.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -25,19 +27,34 @@ public class Life
         JPanel canvasPanel = new JPanel();
         JPanel buttonPanel = new JPanel();
 
-        canvasPanel.add(canvas);
-        canvasPanel.setSize(canvas.getWidth(), canvas.getHeight());
+        addCanvas(life, canvasPanel);
+        addButtons(life, buttonPanel);
 
-        life.add(canvasPanel);
+        setMainWindow(life, canvasPanel);
 
+        setRandomCellsAlive(board);
+        canvas.paint(canvas.getGraphics());
+    }
+
+    private void setMainWindow(JFrame life, JPanel canvasPanel)
+    {
+        life.setTitle("Game of Life");
+        life.setSize(canvasPanel.getWidth() + 100, canvasPanel.getHeight() + 200);
+        life.setVisible(true);
+    }
+
+    private void addButtons(JFrame life, JPanel buttonPanel)
+    {
         addButtons(buttonPanel);
 
         life.add(buttonPanel);
-        life.setTitle("Game of Life");
-        life.setSize(500, 500);
-        life.setVisible(true);
-        setRandomCellsAlive(board);
-        canvas.paint(canvas.getGraphics());
+    }
+
+    private void addCanvas(JFrame life, JPanel canvasPanel)
+    {
+        canvasPanel.add(canvas);
+        canvasPanel.setSize(canvas.getWidth(), canvas.getHeight());
+        life.add(canvasPanel);
     }
 
     private void addButtons(JPanel buttonPanel)
@@ -64,11 +81,6 @@ public class Life
         startButton.addActionListener(new StartListener());
     }
 
-    private void refreshGenerations()
-    {
-        generations.setText(numberOfTicks.toString());
-    }
-
     class GameRunner implements Runnable
     {
         public void run()
@@ -77,7 +89,7 @@ public class Life
             {
                 board.tick();
                 numberOfTicks++;
-                refreshGenerations();
+                generations.setText(numberOfTicks.toString());
                 canvas.paint(canvas.getGraphics());
                 try
                 {
@@ -130,12 +142,15 @@ public class Life
         {
             cell.setAlive(false);
         }
-        
+
         for (int i = 0; i < board.getBoard().size() / 10; i++)
         {
-            int cell = (int) (Math.random() * board.getBoard().size());
-            System.out.println("setting cell number " + cell + " to alive");
-            board.getBoard().get(cell).setAlive(true);
+            getRandomCell(board).setAlive(true);
         }
+    }
+
+    private static Cell getRandomCell(GameBoard board)
+    {
+        return board.getBoard().get((int)(Math.random() * board.getBoard().size()));
     }
 }

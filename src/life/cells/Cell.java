@@ -1,4 +1,4 @@
-package life;
+package life.cells;
 
 import java.util.*;
 
@@ -20,12 +20,12 @@ public class Cell implements CellListener
         this.numberOfLiveNeighbours = 0;
     }
 
-    int getRow()
+    public int getRow()
     {
         return row;
     }
 
-    int getColumn()
+    public int getColumn()
     {
         return column;
     }
@@ -35,7 +35,7 @@ public class Cell implements CellListener
         return alive;
     }
 
-    void setAlive(boolean alive)
+    public void setAlive(boolean alive)
     {
         if (!this.alive == alive) tellNeighbours(alive);
         this.alive = alive;
@@ -72,7 +72,7 @@ public class Cell implements CellListener
         return numberOfLiveNeighbours;
     }
 
-    void cellListener(CellListener cellListener)
+    public void cellListener(CellListener cellListener)
     {
         listeningCells.add(cellListener);
     }
@@ -82,7 +82,7 @@ public class Cell implements CellListener
         this.newState = newState;
     }
 
-    void applyNewState()
+    public void applyNewState()
     {
         if (newState!=null) setAlive(newState);
     }

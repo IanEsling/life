@@ -1,5 +1,6 @@
 package life;
 
+import life.cells.*;
 import life.rules.*;
 
 import java.util.*;
@@ -9,7 +10,7 @@ import java.util.*;
 public class GameBoard
 {
     List<Cell> board;
-    int totalRows, totalColumns;
+    public int totalRows, totalColumns;
     List<RuleHandler> rules = new ArrayList<RuleHandler>();
 
     GameBoard(int rows, int columns)
@@ -25,7 +26,7 @@ public class GameBoard
         setComeToLifeIfExactlyThreeLiveNeighboursRule();
     }
 
-    List<Cell> getBoard()
+    public List<Cell> getBoard()
     {
         return board;
     }
@@ -43,7 +44,7 @@ public class GameBoard
         Cell[][] cells = new Cell[totalRows][totalColumns];
         for (Cell cell : board)
         {
-            cells[cell.getRow()-1][cell.getColumn()-1] = cell;
+            cells[cell.getRow() - 1][cell.getColumn() - 1] = cell;
         }
 
         for (Cell cell : board)
@@ -54,7 +55,7 @@ public class GameBoard
                 {
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
-                        cell.cellListener(cells[row-1][column-1]);
+                        cell.cellListener(cells[row - 1][column - 1]);
                     }
                 }
             }
@@ -83,16 +84,6 @@ public class GameBoard
         {
             cell.applyNewState();
         }
-    }
-
-    private int liveCells()
-    {
-        int total = 0;
-        for (Cell cell : board)
-        {
-            if (cell.isAlive()) total++;
-        }
-        return total;
     }
 
     private void applyRules(Cell cell)

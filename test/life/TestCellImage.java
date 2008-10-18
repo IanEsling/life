@@ -5,6 +5,8 @@ import org.junit.*;
 
 import java.awt.*;
 
+import life.cells.*;
+
 /**
  */
 public class TestCellImage

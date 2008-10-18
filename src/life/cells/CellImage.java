@@ -1,4 +1,4 @@
-package life;
+package life.cells;
 
 import java.awt.*;
 import java.awt.image.*;

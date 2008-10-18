@@ -1,4 +1,7 @@
-package life;
+package life.cells;
+
+import life.cells.*;
+import life.*;
 
 import java.awt.*;
 import java.awt.image.*;
@@ -10,9 +13,8 @@ public class GameCanvas extends Canvas
     GameBoard board;
     BufferedImage canvasImage;
     int pixelsSquarePerCell = 3;
-    int[] whiteArray, blackArray;
 
-    GameCanvas(GameBoard board, int pixelsSquarePerCell)
+    public GameCanvas(GameBoard board, int pixelsSquarePerCell)
     {
         this.pixelsSquarePerCell = pixelsSquarePerCell;
         setUp(board);

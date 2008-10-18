@@ -2,6 +2,7 @@ package life;
 
 import static junit.framework.Assert.*;
 import org.junit.*;
+import life.cells.*;
 
 /**
  */
