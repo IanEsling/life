@@ -40,6 +40,20 @@ public class TestGameBoard
     }
 
     @Test
+    public void randomCells()
+    {
+        List<Integer> results = new ArrayList<Integer>();
+        gameboard = new GameBoard(100,100);
+        for (int i = 0; i < gameboard.getBoard().size() / 23; i++)
+        {
+            int cell = (int) (Math.random() * gameboard.getBoard().size());
+            results.add(cell);
+        }
+        Collections.sort(results);
+        System.out.println(results.toString());
+    }
+
+    @Test
     public void cellIsAliveOrDead()
     {
         assertWholeBoardIsDead();

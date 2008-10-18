@@ -4,40 +4,37 @@ import static junit.framework.Assert.*;
 import org.junit.*;
 
 import java.awt.*;
-import java.awt.image.*;
 
 /**
  */
 public class TestCellImage
 {
-    BufferedImage canvas;
-    Cell cell;
+    GameCanvas canvas;
+    GameBoard board;
 
     @Before
     public void setUp()
     {
-        canvas = new BufferedImage(10, 10, BufferedImage.TYPE_INT_RGB);
-        cell = new Cell(2, 2);
+        board = new GameBoard(10, 12);
     }
 
     @Test
     public void imageUpdatesCanvas()
     {
-        new CellImage(new Cell(3, 3), canvas, 1);
-        new CellImage(cell, canvas, 1);
-        cell.setAlive(true);
+        canvas = new GameCanvas(board, 1);
+        board.getBoard().get(board.getBoard().indexOf(new Cell(2,2))).setAlive(true);
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 12; i++)
         {
             for (int j = 0; j < 10; j++)
             {
                 if (i == 1 && j == 1)
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.white.getRGB(), canvas.getRGB(i, j));
+                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.white.getRGB(), canvas.getImage().getRGB(i, j));
                 }
                 else
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getRGB(i, j));
+                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getImage().getRGB(i, j));
                 }
             }
         }
@@ -46,29 +43,34 @@ public class TestCellImage
     @Test
     public void updateMultiplePixels()
     {
-        new CellImage(new Cell(3, 3), canvas, 2);
-        new CellImage(cell, canvas, 2);
-        cell.setAlive(true);
-        for (int i = 0; i < 10; i++)
+        canvas = new GameCanvas(board, 2);
+        Cell cell1 = board.getBoard().get(board.getBoard().indexOf(new Cell(2,2)));
+        Cell cell2 = board.getBoard().get(board.getBoard().indexOf(new Cell(9,9)));
+        cell1.setAlive(true);
+        cell2.setAlive(true);
+
+        for (int i = 0; i < 12; i++)
         {
             for (int j = 0; j < 10; j++)
             {
-                if ((i == 1 || i == 2) && (j == 1 || j == 2))
+                if (((i == 2 || i == 3) && (j == 2 || j == 3)) || ((i == 16 || i == 17) && (j == 16 || j == 17)))
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.white.getRGB(), canvas.getRGB(i, j));
+                    assertEquals("canvas pixel not white at " + i + "," + j, Color.white.getRGB(), canvas.getImage().getRGB(i, j));
                 }
                 else
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getRGB(i, j));
+                    assertEquals("canvas pixel not black at " + i + "," + j, Color.black.getRGB(), canvas.getImage().getRGB(i, j));
                 }
             }
         }
-        cell.setAlive(false);
-        for (int i = 0; i < 10; i++)
+        
+        cell1.setAlive(false);
+        cell2.setAlive(false);
+        for (int i = 0; i < 12; i++)
         {
             for (int j = 0; j < 10; j++)
             {
-                assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getRGB(i, j));
+                assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getImage().getRGB(i, j));
             }
         }
     }

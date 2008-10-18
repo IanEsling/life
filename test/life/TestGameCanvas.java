@@ -1,6 +1,7 @@
 package life;
 
 import static junit.framework.Assert.*;
+import static junit.framework.Assert.assertEquals;
 import org.junit.*;
 
 import java.awt.image.*;
@@ -20,11 +21,6 @@ public class TestGameCanvas
         assertEquals("canvas wrong height", 10, testee.getHeight());
     }
 
-    private Raster getRaster()
-    {
-        return testee.getImage().getRaster();
-    }
-
     @Test
     public void canvasPixels()
     {
@@ -32,19 +28,18 @@ public class TestGameCanvas
         testee = new GameCanvas(board, 1);
         board.getCell(new Cell(2, 2)).setAlive(true);
         testee.paint();
-        DataBuffer data = testee.getImage().getData(getRaster().getBounds()).getDataBuffer();
-        for (int i = 0; i < data.getSize(); i++)
+        for (int i = 1; i < board.getBoard().size(); i++)
         {
             if (i == 13)
             {
-                assertEquals("pixel not turned on at 2,2", new int[]{Color.white.getRGB()}, data.getElem(i));
+                assertEquals("pixel not turned on for cell at 2,2", Color.white.getRGB(), testee.getImage().getRGB(1,1));
             }
             else
             {
-                assertEquals("image element wrong at " + i, 0, data.getElem(i));
+                assertEquals("pixel not turned on for cell at "+board.getBoard().get(i).toString(),
+                        Color.black.getRGB(),
+                        testee.getImage().getRGB(board.getBoard().get(i).getColumn()-1,board.getBoard().get(i).getRow()-1));
             }
         }
-
-
     }
 }

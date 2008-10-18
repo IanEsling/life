@@ -10,12 +10,12 @@ class CellImage implements CellListener
     BufferedImage canvas;
     int pixelsPerSide, cellRow, cellColumn;
 
-    CellImage(Cell cell, BufferedImage canvas, int pixelsPerSide)
+    CellImage(Cell cell, GameCanvas gamecanvas)
     {
         cellRow = cell.getRow();
         cellColumn = cell.getColumn();
-        this.canvas = canvas;
-        this.pixelsPerSide = pixelsPerSide;
+        this.canvas = gamecanvas.getImage();
+        this.pixelsPerSide = gamecanvas.pixelsSquarePerCell;
         cell.cellListener(this);
     }
 
@@ -31,11 +31,11 @@ class CellImage implements CellListener
 
     private void paintPixels(Color colour)
     {
-        for (int row = 1;row<=pixelsPerSide;row++)
+        for (int row = 0; row < pixelsPerSide; row++)
         {
-            for (int col = 1;col<=pixelsPerSide;col++)
+            for (int col = 0; col < pixelsPerSide; col++)
             {
-                canvas.setRGB((cellRow - 1) * row, (cellColumn - 1) * col, colour.getRGB());
+                canvas.setRGB(((cellRow - 1)*pixelsPerSide) + row, ((cellColumn - 1)*pixelsPerSide) + col, colour.getRGB());
             }
         }
     }

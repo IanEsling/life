@@ -47,7 +47,7 @@ public class GameCanvas extends Canvas
     {
         for (Cell cell : board.getBoard())
         {
-            new CellImage(cell, canvasImage, pixelsSquarePerCell);
+            new CellImage(cell, this);
         }
     }
 

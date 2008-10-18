@@ -54,7 +54,6 @@ public class GameBoard
                 {
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
-                        System.out.println("adding new listener to cell "+row+","+column);
                         cell.cellListener(cells[row-1][column-1]);
                     }
                 }
@@ -69,7 +68,6 @@ public class GameBoard
         {
             for (int column = 1; column <= columns; column++)
             {
-                System.out.println("adding new cell "+row+","+column+" to board");
                 board.add(new Cell(row, column));
             }
         }
@@ -85,6 +83,16 @@ public class GameBoard
         {
             cell.applyNewState();
         }
+    }
+
+    private int liveCells()
+    {
+        int total = 0;
+        for (Cell cell : board)
+        {
+            if (cell.isAlive()) total++;
+        }
+        return total;
     }
 
     private void applyRules(Cell cell)

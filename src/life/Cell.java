@@ -37,9 +37,9 @@ public class Cell implements CellListener
 
     void setAlive(boolean alive)
     {
+        if (!this.alive == alive) tellNeighbours(alive);
         this.alive = alive;
-        this.newState = null;
-        tellNeighbours(alive);
+        this.newState = null;        
     }
 
     private void tellNeighbours(boolean alive)

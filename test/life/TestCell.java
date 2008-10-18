@@ -47,4 +47,26 @@ public class TestCell
         assertEquals(0, cell1.getNumberOfLiveNeighbours());
         assertEquals(0, cell3.getNumberOfLiveNeighbours());
     }
+
+    @Test
+    public void duplicateStateChangesIgnored()
+    {
+        Cell cell1 = new Cell(1, 1);
+        Cell cell2 = new Cell(1, 2);
+        Cell cell3 = new Cell(1, 3);
+        cell2.cellListener(cell1);
+        cell2.cellListener(cell3);
+        cell2.setAlive(true);
+        assertEquals(1, cell1.getNumberOfLiveNeighbours());
+        assertEquals(1, cell3.getNumberOfLiveNeighbours());
+        cell2.setAlive(true);
+        assertEquals(1, cell1.getNumberOfLiveNeighbours());
+        assertEquals(1, cell3.getNumberOfLiveNeighbours());
+        cell2.setAlive(false);
+        assertEquals(0, cell1.getNumberOfLiveNeighbours());
+        assertEquals(0, cell3.getNumberOfLiveNeighbours());
+        cell2.setAlive(false);
+        assertEquals(0, cell1.getNumberOfLiveNeighbours());
+        assertEquals(0, cell3.getNumberOfLiveNeighbours());
+    }
 }
