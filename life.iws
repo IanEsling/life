@@ -34,21 +34,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/life/Life.java" line="36" class="life.Life" package="life">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -101,7 +86,38 @@
       <file leaf-file-name="Life.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/Life.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="5" selection-start="1081" selection-end="1081" vertical-scroll-proportion="1.3407822">
+            <state line="151" column="21" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.6785714">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1224960012000" expanded="true" signature="774:888" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="930:1861" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="1691:1817" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="1760:1807" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="1908:2511" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="1997:2505" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="2566:2679" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="2627:2673" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="2735:2942" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="2796:2936" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3002:3232" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3063:3226" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3298:3535" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3596:3689" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3771:4110" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3839:3881" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="3953:3963" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="4004:4014" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="4054:4104" placeholder="{...}" />
+                <marker date="1224960012000" expanded="true" signature="4148:4177" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LifeRenderer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="4" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.61849713">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,9 +126,9 @@
         </entry>
       </file>
       <file leaf-file-name="LifeMain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/LifeMain.java">
+        <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="377" selection-end="377" vertical-scroll-proportion="1.3917526">
+            <state line="20" column="54" selection-start="425" selection-end="425" vertical-scroll-proportion="0.6936416">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,22 +136,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeApplet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/life/LifeApplet.java">
+      <file leaf-file-name="LifeApplet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="126" selection-end="126" vertical-scroll-proportion="0.92783505">
+            <state line="16" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34104046">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameBoard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="4" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.10055866">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +150,7 @@
       <file leaf-file-name="BoardListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/board/BoardListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="52" selection-start="251" selection-end="251" vertical-scroll-proportion="1.113402">
+            <state line="12" column="52" selection-start="251" selection-end="251" vertical-scroll-proportion="0.41618496">
               <folding />
             </state>
           </provider>
@@ -152,7 +159,7 @@
       <file leaf-file-name="JProgressBar.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///usr/jdk1.6.0_02/src.zip!/javax/swing/JProgressBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="11" selection-start="7293" selection-end="7293" vertical-scroll-proportion="0.10055866">
+            <state line="231" column="11" selection-start="7293" selection-end="7293" vertical-scroll-proportion="0.035714287">
               <folding />
             </state>
           </provider>
@@ -161,7 +168,7 @@
       <file leaf-file-name="TestGameBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="92" selection-start="667" selection-end="667" vertical-scroll-proportion="0.10055866">
+            <state line="35" column="92" selection-start="667" selection-end="667" vertical-scroll-proportion="0.035714287">
               <folding />
             </state>
           </provider>
@@ -170,7 +177,7 @@
       <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="18" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0927835">
+            <state line="64" column="18" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.03468208">
               <folding />
             </state>
           </provider>
@@ -179,7 +186,7 @@
       <file leaf-file-name="TestCell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="22" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0927835">
+            <state line="41" column="22" selection-start="872" selection-end="872" vertical-scroll-proportion="0.03468208">
               <folding />
             </state>
           </provider>
@@ -188,7 +195,7 @@
       <file leaf-file-name="TestGameCanvas.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="113" selection-start="1192" selection-end="1192" vertical-scroll-proportion="1.849162">
+            <state line="40" column="113" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.65674603">
               <folding />
             </state>
           </provider>
@@ -315,6 +322,32 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life/ui" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="life" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="life" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/media/idea/life" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/media/idea/life/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life/board" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
@@ -358,7 +391,7 @@
   <component name="RunManager" selected="Applet.LifeApplet">
     <tempConfiguration default="false" name="LifeApplet" type="Applet" factoryName="Applet">
       <module name="life" />
-      <option name="MAIN_CLASS_NAME" value="life.LifeApplet" />
+      <option name="MAIN_CLASS_NAME" value="life.ui.LifeApplet" />
       <option name="HTML_FILE_NAME" />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -367,13 +400,7 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53725" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
@@ -522,7 +549,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1024" height="718" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
@@ -545,7 +572,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55985916" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55985916" order="2" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -617,15 +644,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/life/TestCellImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="44" selection-start="1700" selection-end="1700" vertical-scroll-proportion="2.4301677">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="389" column="11" selection-start="13072" selection-end="13072" vertical-scroll-proportion="0.028901733">
@@ -670,67 +688,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/BoardListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="52" selection-start="251" selection-end="251" vertical-scroll-proportion="1.113402">
+        <state line="12" column="52" selection-start="251" selection-end="251" vertical-scroll-proportion="0.41618496">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/jdk1.6.0_02/src.zip!/javax/swing/JProgressBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="11" selection-start="7293" selection-end="7293" vertical-scroll-proportion="0.10055866">
+        <state line="231" column="11" selection-start="7293" selection-end="7293" vertical-scroll-proportion="0.035714287">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="92" selection-start="667" selection-end="667" vertical-scroll-proportion="0.10055866">
+        <state line="35" column="92" selection-start="667" selection-end="667" vertical-scroll-proportion="0.035714287">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="18" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0927835">
+        <state line="64" column="18" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.03468208">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="22" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0927835">
+        <state line="41" column="22" selection-start="872" selection-end="872" vertical-scroll-proportion="0.03468208">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="113" selection-start="1192" selection-end="1192" vertical-scroll-proportion="1.849162">
+        <state line="40" column="113" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.65674603">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/LifeMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="377" selection-end="377" vertical-scroll-proportion="1.3917526">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/Life.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="1081" selection-end="1081" vertical-scroll-proportion="1.3407822">
+        <state line="151" column="21" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.6785714">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1224960012000" expanded="true" signature="774:888" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="930:1861" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="1691:1817" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="1760:1807" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="1908:2511" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="1997:2505" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="2566:2679" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="2627:2673" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="2735:2942" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="2796:2936" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3002:3232" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3063:3226" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3298:3535" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3596:3689" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3771:4110" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3839:3881" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="3953:3963" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="4004:4014" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="4054:4104" placeholder="{...}" />
+            <marker date="1224960012000" expanded="true" signature="4148:4177" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="54" selection-start="425" selection-end="425" vertical-scroll-proportion="0.6936416">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/LifeApplet.java">
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="126" selection-end="126" vertical-scroll-proportion="0.92783505">
+        <state line="16" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34104046">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="4" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.61849713">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

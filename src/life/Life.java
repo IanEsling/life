@@ -10,63 +10,18 @@ public class Life extends JApplet
 {
     GameBoard board;
     GameCanvas canvas;
-    JPanel canvasPanel = new JPanel();
-    JPanel buttonPanel = new JPanel();
-    Button startButton, stopButton, randomise, closeButton;
-    JTextField generations;
-    CellListeningTextField liveCells;
+    public Button startButton, stopButton, randomise, closeButton;
+    public JTextField generations;
+    public CellListeningTextField liveCells;
     boolean gameIsRunning = false;
     GameRunner gameRunner = new GameRunner();
     Thread gameRunningThread;
     Integer numberOfTicks = 0, numberOfLiveCells = 0, numberOfDeadCells = 0;
-    final static int defaultRows = 300, defaultColumns = 300, pixelsPerSide = 2, mainWindowHeight = 500, mainWindowWidth = 500;
+    public final static int defaultRows = 300, defaultColumns = 300, pixelsPerSide = 2, mainWindowHeight = 500, mainWindowWidth = 500;
 
     public Life()
     {
         createComponents();
-    }
-
-    void addComponents(Container frame)
-    {
-        addCanvas(frame, canvasPanel);
-        addButtons(frame, buttonPanel);
-        setMainWindow(frame, canvasPanel);
-        setRandomCellsAlive(board);
-        liveCells.setText();
-        canvas.setVisible(true);
-//        canvas.paint(canvas.getGraphics());
-    }
-
-    private void setMainWindow(Container life, JPanel canvasPanel)
-    {
-        life.setSize(canvasPanel.getWidth() + 100, canvasPanel.getHeight() + 200);
-        life.setVisible(true);
-    }
-
-    private void addButtons(Container life, JPanel buttonPanel)
-    {
-        addButtons(buttonPanel);
-
-        life.add(buttonPanel);
-    }
-
-    private void addCanvas(Container life, JPanel canvasPanel)
-    {
-        canvasPanel.add(canvas);
-        canvasPanel.setSize(canvas.getWidth(), canvas.getHeight());
-        life.add(canvasPanel);
-    }
-
-    private void addButtons(JPanel buttonPanel)
-    {
-        buttonPanel.add(new JLabel("generations:"));
-        buttonPanel.add(generations);
-        buttonPanel.add(new JLabel("live cells:"));
-        buttonPanel.add(liveCells);
-        buttonPanel.add(startButton);
-        buttonPanel.add(stopButton);
-        buttonPanel.add(randomise);
-        buttonPanel.add(closeButton);
     }
 
     private void addCellListener(CellListener listener)
@@ -76,7 +31,6 @@ public class Life extends JApplet
             cell.addCellListener(listener);
         }
     }
-
 
     private void createComponents()
     {
@@ -156,7 +110,7 @@ public class Life extends JApplet
         }
     }
 
-    static void setRandomCellsAlive(GameBoard board)
+    public static void setRandomCellsAlive(GameBoard board)
     {
         for (Cell cell : board.getBoard())
         {
@@ -191,5 +145,15 @@ public class Life extends JApplet
         {
             setText(total.toString());
         }
+    }
+
+    public GameBoard getBoard()
+    {
+        return board;
+    }
+
+    public GameCanvas getCanvas()
+    {
+        return canvas;
     }
 }
