@@ -2,6 +2,7 @@ package life.board;
 
 import java.awt.*;
 import java.awt.image.*;
+import java.util.*;
 
 /**
  */
@@ -10,6 +11,12 @@ public class GameCanvas extends Canvas
     GameBoard board;
     BufferedImage canvasImage;
     public static int pixelsSquarePerCell = 3;
+    static Map<Integer, Color> colourTransitions = new HashMap<Integer, Color>();
+
+    public void addColourTransition(Integer numberOfTicks, Color colour)
+    {
+        colourTransitions.put(numberOfTicks, colour);
+    }
 
     public GameCanvas(GameBoard board, int pixelsSquarePerCell)
     {
@@ -25,6 +32,9 @@ public class GameCanvas extends Canvas
     private void setUp(GameBoard board)
     {
         this.board = board;
+        addColourTransition(10, Color.orange);
+        addColourTransition(100, Color.red);
+        addColourTransition(300, Color.blue);
         setCanvasImage(board);
     }
 

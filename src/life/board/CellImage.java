@@ -12,6 +12,7 @@ class CellImage implements CellListener
     BufferedImage canvasImage;
     Cell cell;
     List<Pixel> pixels = new ArrayList<Pixel>();
+    int ticksInState;
 
     class Pixel
     {
@@ -30,16 +31,31 @@ class CellImage implements CellListener
         this.canvasImage = gameCanvas.getImage();
         cell.addCellListener(this);
         setPixels();
+        gameCanvas.board.addTickListener(new TickListener(){
+            public void boardHasTicked()
+            {
+                boardTicker();
+            }
+        });
     }
 
-    public void neighbourComeToLife()
+    void boardTicker()
     {
-        paintPixels(Color.white);
+        ticksInState++;
+        if (GameCanvas.colourTransitions.keySet().contains(ticksInState) && cell.isAlive())
+            paintPixels(GameCanvas.colourTransitions.get(ticksInState));
     }
 
-    public void neighbourHasDied()
+    public void listenedToCellHasComeToLife()
+    {
+        paintPixels(Color.green);
+        ticksInState = 0;
+    }
+
+    public void listenedToCellHasDied()
     {
         paintPixels(Color.black);
+        ticksInState = 0;
     }
 
     private void setPixels()
@@ -48,7 +64,7 @@ class CellImage implements CellListener
         {
             for (int col = 0; col < GameCanvas.pixelsSquarePerCell; col++)
             {
-                pixels.add(new Pixel(row,col));
+                pixels.add(new Pixel(row, col));
             }
         }
     }

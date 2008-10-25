@@ -83,7 +83,7 @@ public class Life extends JApplet
                 canvas.paint(canvas.getGraphics());
                 try
                 {
-                    Thread.sleep(50);
+                    Thread.sleep(25);
                 }
                 catch (InterruptedException e1)
                 {
@@ -149,9 +149,9 @@ public class Life extends JApplet
 
         Integer total = 0;
 
-        public void neighbourComeToLife() {total++;}
+        public void listenedToCellHasComeToLife() {total++;}
 
-        public void neighbourHasDied() {total--;}
+        public void listenedToCellHasDied() {total--;}
 
         public void setText()
         {

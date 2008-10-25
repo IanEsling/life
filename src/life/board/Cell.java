@@ -10,7 +10,7 @@ public class Cell implements CellListener
     final int row, column;
     boolean alive;
     Boolean newState;
-    int numberOfLiveNeighbours;
+    public int numberOfLiveNeighbours;
 
     public Cell(int row, int column)
     {
@@ -53,21 +53,21 @@ public class Cell implements CellListener
         {
             if (alive)
             {
-                cell.neighbourComeToLife();
+                cell.listenedToCellHasComeToLife();
             }
             else
             {
-                cell.neighbourHasDied();
+                cell.listenedToCellHasDied();
             }
         }
     }
 
-    public void neighbourHasDied()
+    public void listenedToCellHasDied()
     {
         --numberOfLiveNeighbours;
     }
 
-    public void neighbourComeToLife()
+    public void listenedToCellHasComeToLife()
     {
         ++numberOfLiveNeighbours;
     }

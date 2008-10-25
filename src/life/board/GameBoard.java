@@ -11,6 +11,7 @@ public class GameBoard
     List<Cell> board;
     public int totalRows, totalColumns;
     public List<RuleHandler> rules = new ArrayList<RuleHandler>();
+    List<TickListener> tickListeners = new ArrayList<TickListener>();
 
     public GameBoard()
     {
@@ -22,11 +23,17 @@ public class GameBoard
         setRules();
     }
 
+    public void addTickListener(TickListener listener)
+    {
+        tickListeners.add(listener);
+    }
+    
     protected void setRules()
     {
         setDieIfLessThanTwoLiveNeighboursRule();
         setDieIfMoreThanThreeLiveNeighboursRule();
         setComeToLifeIfExactlyThreeLiveNeighboursRule();
+        setStayTheSameIfTwoOrThreeNeighboursRule();
     }
 
     public List<Cell> getBoard()
@@ -94,6 +101,10 @@ public class GameBoard
         {
             cell.applyNewState();
         }
+        for (TickListener listener : tickListeners)
+        {
+            listener.boardHasTicked();
+        }
     }
 
     private void applyRules(Cell cell)
@@ -138,6 +149,11 @@ public class GameBoard
     public void setComeToLifeIfExactlyThreeLiveNeighboursRule()
     {
         rules.add(new ComeToLifeIfExactlyThreeLiveNeighboursRule());
+    }
+
+    public void setStayTheSameIfTwoOrThreeNeighboursRule()
+    {
+        rules.add(new StayTheSameIfTwoOrThreeNeighboursRule());
     }
 
 }

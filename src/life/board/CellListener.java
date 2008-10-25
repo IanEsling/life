@@ -4,7 +4,7 @@ package life.board;
  */
 public interface CellListener
 {
-    void neighbourComeToLife();
+    void listenedToCellHasComeToLife();
     
-    void neighbourHasDied();
+    void listenedToCellHasDied();
 }

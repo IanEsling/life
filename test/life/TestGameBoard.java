@@ -13,6 +13,7 @@ public class TestGameBoard
 {
     GameBoard gameboard;
     List<Cell> liveCells;
+    int ticks = 0;
 
     private void setCell(int row, int column)
     {
@@ -37,6 +38,35 @@ public class TestGameBoard
                 rules = new ArrayList<RuleHandler>();
             }
         };
+    }
+
+
+    @Test
+    public void testTickListener()
+    {
+        ticks = 0;
+        gameboard.addTickListener(new TickListener()
+        {
+            public void boardHasTicked()
+            {
+                incrementTick();
+            }
+        });
+        tickFor(10);
+        assertEquals(10, ticks);
+    }
+
+    private void tickFor(int ticks)
+    {
+        for (int i = 0; i < ticks; i++)
+        {
+            gameboard.tick();
+        }
+    }
+
+    void incrementTick()
+    {
+        ticks++;
     }
 
     @Test

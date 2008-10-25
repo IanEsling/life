@@ -83,10 +83,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Life.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/life/ui/Life.java">
+      <file leaf-file-name="TestCellColours.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/life/TestCellColours.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="63" selection-start="142" selection-end="142" vertical-scroll-proportion="0.32142857">
+            <state line="25" column="52" selection-start="432" selection-end="582" vertical-scroll-proportion="1.5773196">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,19 +94,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DieIfMoreThanThreeLiveNeighboursRule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfMoreThanThreeLiveNeighboursRule.java">
+      <file leaf-file-name="TestGameBoard.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.6242775">
+            <state line="48" column="34" selection-start="906" selection-end="906" vertical-scroll-proportion="0.8044693">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameBoard.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="0" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.33519554">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RuleHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/rules/RuleHandler.java">
+      <file leaf-file-name="DieIfLessThanTwoLiveNeighboursRule.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfLessThanTwoLiveNeighboursRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.41618496">
+            <state line="15" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="1.3917526">
               <folding />
             </state>
           </provider>
@@ -115,7 +126,7 @@
       <file leaf-file-name="CellImage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="41" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5549133">
+            <state line="49" column="26" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.7989691">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,10 +134,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CellListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/life/board/CellListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.742268">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GameCanvas.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/board/GameCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="38" selection-start="323" selection-end="323" vertical-scroll-proportion="0.48554912">
+            <state line="36" column="8" selection-start="859" selection-end="859" vertical-scroll-proportion="2.041237">
               <folding />
             </state>
           </provider>
@@ -135,19 +155,8 @@
       <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="25" selection-start="814" selection-end="814" vertical-scroll-proportion="1.5260116">
+            <state line="48" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="1.8556701">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LifeRenderer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="24" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.5414258">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +164,7 @@
       <file leaf-file-name="LifeMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="3" selection-start="63" selection-end="63" vertical-scroll-proportion="0.1734104">
+            <state line="11" column="63" selection-start="203" selection-end="203" vertical-scroll-proportion="0.81958765">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,13 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeApplet.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LifeApplet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="141" selection-end="141" vertical-scroll-proportion="0.3468208">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="21" column="19" selection-start="405" selection-end="405" vertical-scroll-proportion="1.8556701">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -361,23 +368,25 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="life.rules" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="life" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LifeMain">
-    <tempConfiguration default="false" name="LifeMain" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" value="life.ui.LifeMain" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+  <component name="RunManager" selected="Applet.LifeApplet">
+    <tempConfiguration default="false" name="LifeApplet" type="Applet" factoryName="Applet">
+      <module name="life" />
+      <option name="MAIN_CLASS_NAME" value="life.ui.LifeApplet" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="life" />
-      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
@@ -474,7 +483,7 @@
       </method>
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.LifeMain" />
+      <item index="0" class="java.lang.String" itemvalue="Applet.LifeApplet" />
     </list>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
@@ -527,7 +536,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1024" height="718" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
@@ -550,7 +559,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55985916" order="2" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55985916" order="2" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -622,60 +631,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfLessThanTwoLiveNeighboursRule.java">
+    <entry file="file://$PROJECT_DIR$/src/life/rules/RuleHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="293" selection-end="293" vertical-scroll-proportion="0.433526">
+        <state line="12" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="1.113402">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/life/ui/Life.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="4" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.10055866">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/javax/swing/JProgressBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="11" selection-start="7293" selection-end="7293" vertical-scroll-proportion="0.035714287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="92" selection-start="667" selection-end="667" vertical-scroll-proportion="0.035714287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="22" selection-start="872" selection-end="872" vertical-scroll-proportion="0.0927835">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="113" selection-start="1192" selection-end="1192" vertical-scroll-proportion="1.849162">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="141" selection-end="141" vertical-scroll-proportion="0.3468208">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="24" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.5414258">
+        <state line="85" column="35" selection-start="2536" selection-end="2536" vertical-scroll-proportion="0.6785714">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -684,23 +649,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfMoreThanThreeLiveNeighboursRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.6242775">
+        <state line="6" column="30" selection-start="81" selection-end="81" vertical-scroll-proportion="0.556701">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
+    <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="63" selection-end="63" vertical-scroll-proportion="0.1734104">
+        <state line="28" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="2.0111732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/TickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="7" selection-start="36" selection-end="36" vertical-scroll-proportion="0.371134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="34" selection-start="906" selection-end="906" vertical-scroll-proportion="0.8044693">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/CellListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.742268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/rules/StayTheSameIfTwoOrThreeNeighboursRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="206" selection-end="206" vertical-scroll-proportion="0.35714287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.33519554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfLessThanTwoLiveNeighboursRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="1.3917526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5549133">
+        <state line="49" column="26" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.7989691">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/TestCellColours.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="52" selection-start="432" selection-end="582" vertical-scroll-proportion="1.5773196">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -709,31 +725,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/GameCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="323" selection-end="323" vertical-scroll-proportion="0.48554912">
+        <state line="36" column="8" selection-start="859" selection-end="859" vertical-scroll-proportion="2.041237">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="814" selection-end="814" vertical-scroll-proportion="1.5260116">
+        <state line="48" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="1.8556701">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/rules/RuleHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.41618496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/Life.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="63" selection-start="142" selection-end="142" vertical-scroll-proportion="0.32142857">
+        <state line="11" column="63" selection-start="203" selection-end="203" vertical-scroll-proportion="0.81958765">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="405" selection-end="405" vertical-scroll-proportion="1.8556701">
+          <folding />
         </state>
       </provider>
     </entry>
