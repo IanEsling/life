@@ -14,7 +14,6 @@ public class LifeMain
         JFrame app = new JFrame();
         app.setLayout(new FlowLayout());
         renderGameComponents(app);
-        app.setVisible(true);
         app.setTitle("Game Of Life");
     }
 

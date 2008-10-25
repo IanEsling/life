@@ -83,41 +83,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Life.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Life.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/life/Life.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="21" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.6785714">
+            <state line="43" column="20" selection-start="1179" selection-end="1179" vertical-scroll-proportion="1.5357143">
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1224960012000" expanded="true" signature="774:888" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="930:1861" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="1691:1817" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="1760:1807" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="1908:2511" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="1997:2505" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="2566:2679" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="2627:2673" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="2735:2942" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="2796:2936" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3002:3232" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3063:3226" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3298:3535" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3596:3689" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3771:4110" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3839:3881" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="3953:3963" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="4004:4014" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="4054:4104" placeholder="{...}" />
-                <marker date="1224960012000" expanded="true" signature="4148:4177" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeRenderer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LifeRenderer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="4" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.61849713">
+            <state line="57" column="24" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5414258">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,7 +108,7 @@
       <file leaf-file-name="LifeMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="54" selection-start="425" selection-end="425" vertical-scroll-proportion="0.6936416">
+            <state line="9" column="55" selection-start="105" selection-end="105" vertical-scroll-proportion="0.31213874">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +119,7 @@
       <file leaf-file-name="LifeApplet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34104046">
+            <state line="12" column="66" selection-start="157" selection-end="157" vertical-scroll-proportion="0.41618496">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -728,47 +708,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/Life.java">
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="21" selection-start="4171" selection-end="4171" vertical-scroll-proportion="0.6785714">
+        <state line="12" column="66" selection-start="157" selection-end="157" vertical-scroll-proportion="0.41618496">
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1224960012000" expanded="true" signature="774:888" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="930:1861" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="1691:1817" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="1760:1807" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="1908:2511" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="1997:2505" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="2566:2679" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="2627:2673" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="2735:2942" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="2796:2936" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3002:3232" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3063:3226" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3298:3535" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3596:3689" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3771:4110" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3839:3881" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="3953:3963" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="4004:4014" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="4054:4104" placeholder="{...}" />
-            <marker date="1224960012000" expanded="true" signature="4148:4177" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="54" selection-start="425" selection-end="425" vertical-scroll-proportion="0.6936416">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="56" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34104046">
+        <state line="9" column="55" selection-start="105" selection-end="105" vertical-scroll-proportion="0.31213874">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -777,7 +728,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="4" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.61849713">
+        <state line="57" column="24" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.5414258">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/Life.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="20" selection-start="1179" selection-end="1179" vertical-scroll-proportion="1.5357143">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

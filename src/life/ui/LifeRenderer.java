@@ -55,6 +55,7 @@ public class LifeRenderer
     void setRandomCellsAlive()
     {
         Life.setRandomCellsAlive(life.getBoard());
+        life.setLiveCellText();
     }
 
     GameCanvas canvas()

@@ -24,7 +24,7 @@ public class Life extends JApplet
         createComponents();
     }
 
-    private void addCellListener(CellListener listener)
+    private void listenToAllTheGameCells(CellListener listener)
     {
         for (Cell cell : board.getBoard())
         {
@@ -34,12 +34,15 @@ public class Life extends JApplet
 
     private void createComponents()
     {
-        generations = new JTextField(numberOfTicks.toString(), 6);
-        liveCells = new CellListeningTextField(numberOfLiveCells.toString(), 6);
-        generations.setEditable(false);
-        liveCells.setEditable(false);
+        createTextFields();
         board = new GameBoard(defaultRows, defaultColumns);
         canvas = new GameCanvas(board, pixelsPerSide);
+        createButtons();
+        listenToAllTheGameCells(liveCells);
+    }
+
+    private void createButtons()
+    {
         startButton = new Button("start");
         stopButton = new Button("stop");
         randomise = new Button("randomise");
@@ -49,12 +52,21 @@ public class Life extends JApplet
         startButton.addActionListener(new StartListener());
         closeButton.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e)
-            {
-                System.exit(0);
-            }
+            public void actionPerformed(ActionEvent e) {System.exit(0);}
         });
-        addCellListener(liveCells);
+    }
+
+    private void createTextFields()
+    {
+        generations = new JTextField(numberOfTicks.toString(), 6);
+        liveCells = new CellListeningTextField(numberOfLiveCells.toString(), 6);
+        generations.setEditable(false);
+        liveCells.setEditable(false);
+    }
+
+    public void setLiveCellText()
+    {
+        liveCells.setText();
     }
 
     class GameRunner implements Runnable
