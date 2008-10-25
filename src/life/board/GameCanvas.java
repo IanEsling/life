@@ -9,11 +9,11 @@ public class GameCanvas extends Canvas
 {
     GameBoard board;
     BufferedImage canvasImage;
-    int pixelsSquarePerCell = 3;
+    public static int pixelsSquarePerCell = 3;
 
     public GameCanvas(GameBoard board, int pixelsSquarePerCell)
     {
-        this.pixelsSquarePerCell = pixelsSquarePerCell;
+        GameCanvas.pixelsSquarePerCell = pixelsSquarePerCell;
         setUp(board);
     }
 

@@ -1,4 +1,4 @@
-package life;
+package life.ui;
 
 import life.board.*;
 

@@ -1,7 +1,5 @@
 package life.ui;
 
-import life.*;
-
 import javax.swing.*;
 import java.awt.*;
 

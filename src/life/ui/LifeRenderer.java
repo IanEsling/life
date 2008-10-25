@@ -1,6 +1,5 @@
 package life.ui;
 
-import life.*;
 import life.board.*;
 
 import javax.swing.*;

@@ -35,14 +35,19 @@ public class Cell implements CellListener
         return alive;
     }
 
-    public void setAlive(boolean alive)
+    public void setAlive(boolean newLiveState)
     {
-        if (!this.alive == alive) tellNeighbours(alive);
-        this.alive = alive;
-        this.newState = null;        
+        tellListenersIfStateChanged(newLiveState);
+        alive = newLiveState;
+        newState = null;
     }
 
-    private void tellNeighbours(boolean alive)
+    private void tellListenersIfStateChanged(boolean newLiveState)
+    {
+        if (!alive == newLiveState) tellListeners(newLiveState);
+    }
+
+    private void tellListeners(boolean alive)
     {
         for (CellListener cell : listeningCells)
         {
@@ -84,7 +89,7 @@ public class Cell implements CellListener
 
     void applyNewState()
     {
-        if (newState!=null) setAlive(newState);
+        if (newState != null) setAlive(newState);
     }
 
     public boolean equals(Object o)
