@@ -1,6 +1,5 @@
-package life;
+package life.board;
 
-import life.cells.*;
 import life.rules.*;
 
 import java.util.*;
@@ -11,15 +10,19 @@ public class GameBoard
 {
     List<Cell> board;
     public int totalRows, totalColumns;
-    List<RuleHandler> rules = new ArrayList<RuleHandler>();
+    public List<RuleHandler> rules = new ArrayList<RuleHandler>();
 
-    GameBoard(int rows, int columns)
+    public GameBoard()
+    {
+    }
+
+    public GameBoard(int rows, int columns)
     {
         newBoard(rows, columns);
         setRules();
     }
 
-    void setRules()
+    protected void setRules()
     {
         setDieIfLessThanTwoLiveNeighboursRule();
         setDieIfMoreThanThreeLiveNeighboursRule();
@@ -31,7 +34,7 @@ public class GameBoard
         return board;
     }
 
-    private void newBoard(int rows, int columns)
+    protected void newBoard(int rows, int columns)
     {
         this.totalRows = rows;
         this.totalColumns = columns;
@@ -55,11 +58,16 @@ public class GameBoard
                 {
                     if (!(cell.getRow() == row && cell.getColumn() == column))
                     {
-                        cell.cellListener(cells[row - 1][column - 1]);
+                        addCellListener(cells, cell, row, column);
                     }
                 }
             }
         }
+    }
+
+    protected void addCellListener(Cell[][] cells, Cell cell, int row, int column)
+    {
+        cell.addCellListener(cells[row - 1][column - 1]);
     }
 
     private void createBoard(int rows, int columns)
@@ -69,12 +77,14 @@ public class GameBoard
         {
             for (int column = 1; column <= columns; column++)
             {
-                board.add(new Cell(row, column));
+                addCellToBoard(row, column);
             }
         }
     }
 
-    void tick()
+    protected void addCellToBoard(int row, int column) {board.add(new Cell(row, column));}
+
+    public void tick()
     {
         for (Cell cell : board)
         {
@@ -97,7 +107,7 @@ public class GameBoard
         }
     }
 
-    Cell getCell(Cell cell)
+    public Cell getCell(Cell cell)
     {
         if (!board.contains(cell))
         {
@@ -115,17 +125,17 @@ public class GameBoard
 
     private int startIndex(int idx) {return (idx == 1 ? 1 : idx - 1);}
 
-    void setDieIfLessThanTwoLiveNeighboursRule()
+    public void setDieIfLessThanTwoLiveNeighboursRule()
     {
         rules.add(new DieIfLessThanTwoLiveNeighboursRule());
     }
 
-    void setDieIfMoreThanThreeLiveNeighboursRule()
+    public void setDieIfMoreThanThreeLiveNeighboursRule()
     {
         rules.add(new DieIfMoreThanThreeLiveNeighboursRule());
     }
 
-    void setComeToLifeIfExactlyThreeLiveNeighboursRule()
+    public void setComeToLifeIfExactlyThreeLiveNeighboursRule()
     {
         rules.add(new ComeToLifeIfExactlyThreeLiveNeighboursRule());
     }

@@ -1,12 +1,11 @@
 package life;
 
 import static junit.framework.Assert.*;
+import life.board.*;
+import life.rules.*;
 import org.junit.*;
 
 import java.util.*;
-
-import life.rules.*;
-import life.cells.*;
 
 /**
  */
@@ -33,7 +32,7 @@ public class TestGameBoard
     {
         gameboard = new GameBoard(10, 10)
         {
-            void setRules()
+            protected void setRules()
             {
                 rules = new ArrayList<RuleHandler>();
             }
@@ -44,7 +43,7 @@ public class TestGameBoard
     public void randomCells()
     {
         List<Integer> results = new ArrayList<Integer>();
-        gameboard = new GameBoard(100,100);
+        gameboard = new GameBoard(100, 100);
         for (int i = 0; i < gameboard.getBoard().size() / 23; i++)
         {
             int cell = (int) (Math.random() * gameboard.getBoard().size());
@@ -77,7 +76,7 @@ public class TestGameBoard
     }
 
     @Test(expected = CellNotFoundException.class)
-    public void exceptionIfCellNotFound()        
+    public void exceptionIfCellNotFound()
     {
         setCell(11, 11);
     }
@@ -138,7 +137,7 @@ public class TestGameBoard
         {
             if (liveCells.contains(cell))
             {
-                assertTrue("cell in liveCells not alive, row "+cell.getRow()+", column "+cell.getColumn(),
+                assertTrue("cell in liveCells not alive, row " + cell.getRow() + ", column " + cell.getColumn(),
                         cell.isAlive());
             }
             else
@@ -183,9 +182,9 @@ public class TestGameBoard
     {
         for (Cell cell : gameboard.getBoard())
         {
-                assertEquals("cell " + cell.getRow() + ", " + cell.getColumn() + " incorrect" +
-                        " when checking " + aliveRow + "," + aliveColumn,
-                        cell.getRow() == aliveRow && cell.getColumn() == aliveColumn, cell.isAlive());
+            assertEquals("cell " + cell.getRow() + ", " + cell.getColumn() + " incorrect" +
+                    " when checking " + aliveRow + "," + aliveColumn,
+                    cell.getRow() == aliveRow && cell.getColumn() == aliveColumn, cell.isAlive());
         }
     }
 

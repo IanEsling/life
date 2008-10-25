@@ -5,7 +5,7 @@ import org.junit.*;
 
 import java.awt.*;
 
-import life.cells.*;
+import life.board.*;
 
 /**
  */

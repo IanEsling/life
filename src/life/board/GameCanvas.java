@@ -1,7 +1,4 @@
-package life.cells;
-
-import life.cells.*;
-import life.*;
+package life.board;
 
 import java.awt.*;
 import java.awt.image.*;

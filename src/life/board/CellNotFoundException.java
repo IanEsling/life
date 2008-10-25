@@ -1,4 +1,4 @@
-package life.cells;
+package life.board;
 
 /**
  */

@@ -1,56 +1,56 @@
 package life;
 
-import life.cells.*;
+import life.board.*;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Life
+public class Life extends JApplet
 {
     GameBoard board;
     GameCanvas canvas;
-    Button startButton, stopButton, randomise;
+    JPanel canvasPanel = new JPanel();
+    JPanel buttonPanel = new JPanel();
+    Button startButton, stopButton, randomise, closeButton;
     JTextField generations;
+    CellListeningTextField liveCells;
     boolean gameIsRunning = false;
     GameRunner gameRunner = new GameRunner();
     Thread gameRunningThread;
-    Integer numberOfTicks = 0;
+    Integer numberOfTicks = 0, numberOfLiveCells = 0, numberOfDeadCells = 0;
+    final static int defaultRows = 300, defaultColumns = 300, pixelsPerSide = 2, mainWindowHeight = 500, mainWindowWidth = 500;
 
-    Life() throws InterruptedException
+    public Life()
     {
-        JFrame life = new JFrame();
-        life.setLayout(new FlowLayout());
-
         createComponents();
-
-        JPanel canvasPanel = new JPanel();
-        JPanel buttonPanel = new JPanel();
-
-        addCanvas(life, canvasPanel);
-        addButtons(life, buttonPanel);
-
-        setMainWindow(life, canvasPanel);
-
-        setRandomCellsAlive(board);
-        canvas.paint(canvas.getGraphics());
     }
 
-    private void setMainWindow(JFrame life, JPanel canvasPanel)
+    void addComponents(Container frame)
     {
-        life.setTitle("Game of Life");
+        addCanvas(frame, canvasPanel);
+        addButtons(frame, buttonPanel);
+        setMainWindow(frame, canvasPanel);
+        setRandomCellsAlive(board);
+        liveCells.setText();
+        canvas.setVisible(true);
+//        canvas.paint(canvas.getGraphics());
+    }
+
+    private void setMainWindow(Container life, JPanel canvasPanel)
+    {
         life.setSize(canvasPanel.getWidth() + 100, canvasPanel.getHeight() + 200);
         life.setVisible(true);
     }
 
-    private void addButtons(JFrame life, JPanel buttonPanel)
+    private void addButtons(Container life, JPanel buttonPanel)
     {
         addButtons(buttonPanel);
 
         life.add(buttonPanel);
     }
 
-    private void addCanvas(JFrame life, JPanel canvasPanel)
+    private void addCanvas(Container life, JPanel canvasPanel)
     {
         canvasPanel.add(canvas);
         canvasPanel.setSize(canvas.getWidth(), canvas.getHeight());
@@ -61,28 +61,51 @@ public class Life
     {
         buttonPanel.add(new JLabel("generations:"));
         buttonPanel.add(generations);
+        buttonPanel.add(new JLabel("live cells:"));
+        buttonPanel.add(liveCells);
         buttonPanel.add(startButton);
         buttonPanel.add(stopButton);
         buttonPanel.add(randomise);
+        buttonPanel.add(closeButton);
     }
+
+    private void addCellListener(CellListener listener)
+    {
+        for (Cell cell : board.getBoard())
+        {
+            cell.addCellListener(listener);
+        }
+    }
+
 
     private void createComponents()
     {
-        generations = new JTextField(numberOfTicks.toString());
-        generations.setColumns(6);
+        generations = new JTextField(numberOfTicks.toString(), 6);
+        liveCells = new CellListeningTextField(numberOfLiveCells.toString(), 6);
         generations.setEditable(false);
-        board = new GameBoard(300, 300);
-        canvas = new GameCanvas(board, 2);
+        liveCells.setEditable(false);
+        board = new GameBoard(defaultRows, defaultColumns);
+        canvas = new GameCanvas(board, pixelsPerSide);
         startButton = new Button("start");
         stopButton = new Button("stop");
         randomise = new Button("randomise");
+        closeButton = new Button("exit");
         randomise.addActionListener(new RandomiseListener());
         stopButton.addActionListener(new StopListener());
         startButton.addActionListener(new StartListener());
+        closeButton.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                System.exit(0);
+            }
+        });
+        addCellListener(liveCells);
     }
 
     class GameRunner implements Runnable
     {
+        @SuppressWarnings({"CallToPrintStackTrace"})
         public void run()
         {
             while (gameIsRunning)
@@ -90,6 +113,7 @@ public class Life
                 board.tick();
                 numberOfTicks++;
                 generations.setText(numberOfTicks.toString());
+                liveCells.setText();
                 canvas.paint(canvas.getGraphics());
                 try
                 {
@@ -128,12 +152,8 @@ public class Life
             setRandomCellsAlive(board);
             canvas.paint(canvas.getGraphics());
             numberOfTicks = 0;
+            liveCells.setText();
         }
-    }
-
-    public static void main(String[] args) throws InterruptedException
-    {
-        new Life();
     }
 
     static void setRandomCellsAlive(GameBoard board)
@@ -151,6 +171,25 @@ public class Life
 
     private static Cell getRandomCell(GameBoard board)
     {
-        return board.getBoard().get((int)(Math.random() * board.getBoard().size()));
+        return board.getBoard().get((int) (Math.random() * board.getBoard().size()));
+    }
+
+    class CellListeningTextField extends JTextField implements CellListener
+    {
+        CellListeningTextField(String text, Integer cols)
+        {
+            super(text, cols);
+        }
+
+        Integer total = 0;
+
+        public void neighbourComeToLife() {total++;}
+
+        public void neighbourHasDied() {total--;}
+
+        public void setText()
+        {
+            setText(total.toString());
+        }
     }
 }

@@ -1,4 +1,4 @@
-package life.cells;
+package life.board;
 
 import java.util.*;
 
@@ -72,7 +72,7 @@ public class Cell implements CellListener
         return numberOfLiveNeighbours;
     }
 
-    public void cellListener(CellListener cellListener)
+    public void addCellListener(CellListener cellListener)
     {
         listeningCells.add(cellListener);
     }
@@ -82,7 +82,7 @@ public class Cell implements CellListener
         this.newState = newState;
     }
 
-    public void applyNewState()
+    void applyNewState()
     {
         if (newState!=null) setAlive(newState);
     }

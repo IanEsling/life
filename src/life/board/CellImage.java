@@ -1,4 +1,4 @@
-package life.cells;
+package life.board;
 
 import java.awt.*;
 import java.awt.image.*;
@@ -16,7 +16,7 @@ class CellImage implements CellListener
         cellColumn = cell.getColumn();
         this.canvas = gamecanvas.getImage();
         this.pixelsPerSide = gamecanvas.pixelsSquarePerCell;
-        cell.cellListener(this);
+        cell.addCellListener(this);
     }
 
     public void neighbourComeToLife()

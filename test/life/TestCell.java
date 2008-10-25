@@ -2,7 +2,7 @@ package life;
 
 import static junit.framework.Assert.*;
 import org.junit.*;
-import life.cells.*;
+import life.board.*;
 
 /**
  */
@@ -39,8 +39,8 @@ public class TestCell
         Cell cell1 = new Cell(1, 1);
         Cell cell2 = new Cell(1, 2);
         Cell cell3 = new Cell(1, 3);
-        cell2.cellListener(cell1);
-        cell2.cellListener(cell3);
+        cell2.addCellListener(cell1);
+        cell2.addCellListener(cell3);
         cell2.setAlive(true);
         assertEquals(1, cell1.getNumberOfLiveNeighbours());
         assertEquals(1, cell3.getNumberOfLiveNeighbours());
@@ -55,8 +55,8 @@ public class TestCell
         Cell cell1 = new Cell(1, 1);
         Cell cell2 = new Cell(1, 2);
         Cell cell3 = new Cell(1, 3);
-        cell2.cellListener(cell1);
-        cell2.cellListener(cell3);
+        cell2.addCellListener(cell1);
+        cell2.addCellListener(cell3);
         cell2.setAlive(true);
         assertEquals(1, cell1.getNumberOfLiveNeighbours());
         assertEquals(1, cell3.getNumberOfLiveNeighbours());
