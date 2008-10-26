@@ -77,7 +77,16 @@ public class LifeRunner
 
         for (int i = 0; i < (board.getCells().size() / 100) * percentageOfBoardCells; i++)
         {
-            getRandomCell(board).setAlive(true);
+            boolean aliveCell=true;
+            while(aliveCell)
+            {
+                Cell cell = getRandomCell(board);
+                if (!cell.isAlive())
+                {
+                    cell.setAlive(true);
+                    aliveCell = false;
+                }
+            }                        
         }
     }
 

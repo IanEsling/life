@@ -7,10 +7,13 @@ import java.awt.*;
  */
 public class LifeMain
 {
-    public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args) throws InterruptedException, ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException
     {
+        UIManager.setLookAndFeel(
+            UIManager.getSystemLookAndFeelClassName());
         JFrame app = new JFrame();
         app.setLayout(new FlowLayout());
+        app.setSize(700,500);
         renderGameComponents(app);
         app.setTitle("Game Of Life");
     }

@@ -13,14 +13,15 @@ import java.util.*;
 public class LifeGuiRenderer
 {
     LifeRunner lifeRunner;
-    JPanel canvasPanel = new JPanel();
-    JPanel controlPanel = new JPanel();
+    JPanel canvasPanel = new JPanel(new FlowLayout());
+    JPanel controlPanel = new JPanel(new FlowLayout());
     JSlider slider;
     public Button startButton, stopButton, randomise, closeButton;
     public BoardListeningTextField generations;
     public CellListeningTextField liveCells;
     Integer numberOfTicks = 0, numberOfLiveCells = 0, numberOfDeadCells = 0;
-    public final static int mainWindowHeight = 500, mainWindowWidth = 500;
+    public final static int mainWindowHeight = 500, mainWindowWidth = 500, controlPanelWidth = 150,
+    controlPanelHeight = 250;
 
     public LifeGuiRenderer(Container frame, LifeRunner lifeRunner)
     {
@@ -32,8 +33,7 @@ public class LifeGuiRenderer
     void addComponents(Container frame)
     {
         addCanvas(frame, canvasPanel);
-        addButtons(frame, controlPanel);
-        addSlider(controlPanel);
+        setControlPanel(frame, controlPanel);
     }
 
     private void createComponents()
@@ -60,7 +60,6 @@ public class LifeGuiRenderer
             public void stateChanged(ChangeEvent e)
             {
                 lifeRunner.setRandomPercentageOfBoardCells(slider.getValue());
-                randomiseCellsAndResetComponents();
             }
         });
     }
@@ -96,31 +95,28 @@ public class LifeGuiRenderer
         liveCells.setEditable(false);
     }
 
-    void addSlider(JPanel panel)
-    {
-        panel.add(slider);
-    }
-
     void setMainWindow(Container container)
     {
         container.setSize(canvasPanel.getWidth() + 400, canvasPanel.getHeight() + 30);
         container.setVisible(true);
     }
 
-    private void addButtons(Container container, JPanel buttonPanel)
+    private void setControlPanel(Container container, JPanel controlPanel)
     {
-        buttonPanel.setSize(slider.getWidth()+20, canvas().getHeight());
+        controlPanel.setPreferredSize(new Dimension(controlPanelWidth, controlPanelHeight));
+        controlPanel.setLayout(new GridLayout(9,1));
 
-        buttonPanel.add(new JLabel("generations:"));
-        buttonPanel.add(generations);
-        buttonPanel.add(new JLabel("live cells:"));
-        buttonPanel.add(liveCells);
-        buttonPanel.add(startButton);
-        buttonPanel.add(stopButton);
-        buttonPanel.add(randomise);
-        buttonPanel.add(closeButton);
-        
-        container.add(buttonPanel);
+        controlPanel.add(new JLabel("generations:"));
+        controlPanel.add(generations);
+        controlPanel.add(new JLabel("live cells:"));
+        controlPanel.add(liveCells);
+        controlPanel.add(startButton);
+        controlPanel.add(stopButton);
+        controlPanel.add(closeButton);
+        controlPanel.add(randomise);
+        controlPanel.add(slider);
+
+        container.add(controlPanel);
     }
 
     private void addCanvas(Container container, JPanel canvasPanel)
