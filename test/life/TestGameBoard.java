@@ -74,9 +74,9 @@ public class TestGameBoard
     {
         List<Integer> results = new ArrayList<Integer>();
         gameboard = new GameBoard(100, 100);
-        for (int i = 0; i < gameboard.getBoard().size() / 23; i++)
+        for (int i = 0; i < gameboard.getCells().size() / 23; i++)
         {
-            int cell = (int) (Math.random() * gameboard.getBoard().size());
+            int cell = (int) (Math.random() * gameboard.getCells().size());
             results.add(cell);
         }
         Collections.sort(results);
@@ -163,7 +163,7 @@ public class TestGameBoard
 
     private void assertLiveCells()
     {
-        for (Cell cell : gameboard.getBoard())
+        for (Cell cell : gameboard.getCells())
         {
             if (liveCells.contains(cell))
             {
@@ -201,7 +201,7 @@ public class TestGameBoard
 
     private void assertWholeBoardIsDead()
     {
-        for (Cell cell : gameboard.getBoard())
+        for (Cell cell : gameboard.getCells())
         {
             assertEquals("expected cell " + cell.getRow() + ", " + cell.getColumn() + " to be false",
                     false, cell.isAlive());
@@ -210,7 +210,7 @@ public class TestGameBoard
 
     private void assertOnlyCellAlive(int aliveRow, int aliveColumn)
     {
-        for (Cell cell : gameboard.getBoard())
+        for (Cell cell : gameboard.getCells())
         {
             assertEquals("cell " + cell.getRow() + ", " + cell.getColumn() + " incorrect" +
                     " when checking " + aliveRow + "," + aliveColumn,

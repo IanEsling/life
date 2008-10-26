@@ -42,7 +42,7 @@ class CellImage implements CellListener
     void boardTicker()
     {
         ticksInState++;
-        if (GameCanvas.colourTransitions.keySet().contains(ticksInState) && cell.isAlive())
+        if (cell.isAlive() && GameCanvas.colourTransitions.keySet().contains(ticksInState))
             paintPixels(GameCanvas.colourTransitions.get(ticksInState));
     }
 

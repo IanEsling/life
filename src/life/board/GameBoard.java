@@ -12,9 +12,11 @@ public class GameBoard
     public int totalRows, totalColumns;
     public List<RuleHandler> rules = new ArrayList<RuleHandler>();
     List<TickListener> tickListeners = new ArrayList<TickListener>();
+    public final static int defaultRows = 300, defaultColumns = 300;
 
     public GameBoard()
     {
+        this(defaultRows, defaultColumns);
     }
 
     public GameBoard(int rows, int columns)
@@ -36,7 +38,7 @@ public class GameBoard
         setStayTheSameIfTwoOrThreeNeighboursRule();
     }
 
-    public List<Cell> getBoard()
+    public List<Cell> getCells()
     {
         return board;
     }

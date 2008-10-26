@@ -7,7 +7,7 @@ import java.awt.*;
  */
 public class LifeApplet extends JApplet
 {
-    LifeRenderer renderer;
+    LifeGuiRenderer guiRenderer;
     
     public LifeApplet()
     {
@@ -18,13 +18,13 @@ public class LifeApplet extends JApplet
 
     private void renderGameComponents(Container app)
     {
-        renderer = new LifeRenderer(new Life());
-        renderer.addComponents(app);
-        renderer.setRandomCellsAlive();
+        guiRenderer = new LifeGuiRenderer(this, new LifeRunner());
+        guiRenderer.addComponents(app);
+        guiRenderer.setRandomCellsAlive();
     }
 
     public void paint(Graphics g)
     {
-        renderer.canvas().paint(g);
+        guiRenderer.canvas().paint(g);
     }
 }

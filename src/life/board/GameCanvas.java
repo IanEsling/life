@@ -10,7 +10,7 @@ public class GameCanvas extends Canvas
 {
     GameBoard board;
     BufferedImage canvasImage;
-    public static int pixelsSquarePerCell = 3;
+    public static int pixelsSquarePerCell = 2;
     static Map<Integer, Color> colourTransitions = new HashMap<Integer, Color>();
 
     public void addColourTransition(Integer numberOfTicks, Color colour)
@@ -24,7 +24,7 @@ public class GameCanvas extends Canvas
         setUp(board);
     }
 
-    GameCanvas(GameBoard board)
+    public GameCanvas(GameBoard board)
     {
         setUp(board);
     }
@@ -54,7 +54,7 @@ public class GameCanvas extends Canvas
 
     public void paint()
     {
-        for (Cell cell : board.getBoard())
+        for (Cell cell : board.getCells())
         {
             new CellImage(cell, this);
         }

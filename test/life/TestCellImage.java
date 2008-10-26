@@ -24,7 +24,7 @@ public class TestCellImage
     public void imageUpdatesCanvas()
     {
         canvas = new GameCanvas(board, 1);
-        board.getBoard().get(board.getBoard().indexOf(new Cell(2,2))).setAlive(true);
+        board.getCells().get(board.getCells().indexOf(new Cell(2,2))).setAlive(true);
 
         for (int i = 0; i < 12; i++)
         {
@@ -46,8 +46,8 @@ public class TestCellImage
     public void updateMultiplePixels()
     {
         canvas = new GameCanvas(board, 2);
-        Cell cell1 = board.getBoard().get(board.getBoard().indexOf(new Cell(2,2)));
-        Cell cell2 = board.getBoard().get(board.getBoard().indexOf(new Cell(9,9)));
+        Cell cell1 = board.getCells().get(board.getCells().indexOf(new Cell(2,2)));
+        Cell cell2 = board.getCells().get(board.getCells().indexOf(new Cell(9,9)));
         cell1.setAlive(true);
         cell2.setAlive(true);
 

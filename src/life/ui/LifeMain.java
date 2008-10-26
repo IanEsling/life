@@ -17,9 +17,9 @@ public class LifeMain
 
     private static void renderGameComponents(Container app)
     {
-        LifeRenderer renderer = new LifeRenderer(new Life());
-        renderer.addComponents(app);
-        renderer.setRandomCellsAlive();
-        renderer.setMainWindow(app);
+        LifeGuiRenderer guiRenderer = new LifeGuiRenderer(app, new LifeRunner());
+//        guiRenderer.addComponents(app);
+        guiRenderer.setRandomCellsAlive();
+        guiRenderer.setMainWindow(app);
     }
 }

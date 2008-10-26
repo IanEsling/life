@@ -28,7 +28,7 @@ public class TestGameCanvas
         testee = new GameCanvas(board, 1);
         board.getCell(new Cell(2, 2)).setAlive(true);
         testee.paint();
-        for (int i = 1; i < board.getBoard().size(); i++)
+        for (int i = 1; i < board.getCells().size(); i++)
         {
             if (i == 13)
             {
@@ -36,9 +36,9 @@ public class TestGameCanvas
             }
             else
             {
-                assertEquals("pixel not turned on for cell at "+board.getBoard().get(i).toString(),
+                assertEquals("pixel not turned on for cell at "+board.getCells().get(i).toString(),
                         Color.black.getRGB(),
-                        testee.getImage().getRGB(board.getBoard().get(i).getColumn()-1,board.getBoard().get(i).getRow()-1));
+                        testee.getImage().getRGB(board.getCells().get(i).getColumn()-1,board.getCells().get(i).getRow()-1));
             }
         }
     }
