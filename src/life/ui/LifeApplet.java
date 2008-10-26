@@ -12,14 +12,13 @@ public class LifeApplet extends JApplet
     public LifeApplet()
     {
         setLayout(new FlowLayout());
-        renderGameComponents(this);
+        renderGameComponents();
         setVisible(true);
     }
 
-    private void renderGameComponents(Container app)
+    private void renderGameComponents()
     {
         guiRenderer = new LifeGuiRenderer(this, new LifeRunner());
-        guiRenderer.addComponents(app);
         guiRenderer.setRandomCellsAlive();
     }
 

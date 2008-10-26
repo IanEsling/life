@@ -6,6 +6,7 @@ public class LifeRunner
 {
     private GameBoard board;
     private GameCanvas canvas;
+    Integer percentageOfBoardCells = 10;
     boolean gameIsRunning = false;
     GameRunner gameRunner = new GameRunner();
     Thread gameRunningThread;
@@ -62,6 +63,10 @@ public class LifeRunner
         }
     }
 
+    void setRandomPercentageOfBoardCells(Integer value)
+    {
+        percentageOfBoardCells = value;
+    }
 
     void setRandomCellsAlive()
     {
@@ -70,7 +75,7 @@ public class LifeRunner
             cell.setAlive(false);
         }
 
-        for (int i = 0; i < board.getCells().size() / 10; i++)
+        for (int i = 0; i < (board.getCells().size() / 100) * percentageOfBoardCells; i++)
         {
             getRandomCell(board).setAlive(true);
         }
@@ -80,7 +85,6 @@ public class LifeRunner
     {
         return board.getCells().get((int) (Math.random() * board.getCells().size()));
     }
-
 
     public GameBoard getBoard()
     {
