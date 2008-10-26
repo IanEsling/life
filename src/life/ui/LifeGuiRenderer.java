@@ -21,7 +21,7 @@ public class LifeGuiRenderer
     public CellListeningTextField liveCells;
     Integer numberOfTicks = 0, numberOfLiveCells = 0, numberOfDeadCells = 0;
     public final static int mainWindowHeight = 500, mainWindowWidth = 500, controlPanelWidth = 150,
-    controlPanelHeight = 250;
+            controlPanelHeight = 250;
 
     public LifeGuiRenderer(Container frame, LifeRunner lifeRunner)
     {
@@ -45,21 +45,26 @@ public class LifeGuiRenderer
         lifeRunner.listenForBoardTicks(generations);
         lifeRunner.listenForBoardTicks(liveCells);
     }
-    
+
     private void createSlider()
     {
         slider = new JSlider(0, 100, lifeRunner.percentageOfBoardCells);
         Properties labels = new Properties();
-        labels.put(0, new JLabel("0%") );
-        labels.put(50, new JLabel("50%") );
-        labels.put( 100, new JLabel("100%") );
+        labels.put(0, new JLabel("0%"));
+        labels.put(50, new JLabel("50%"));
+        labels.put(100, new JLabel("100%"));
         slider.setLabelTable(labels);
         slider.setPaintLabels(true);
 
-        slider.addChangeListener(new ChangeListener(){
+        slider.addChangeListener(new ChangeListener()
+        {
             public void stateChanged(ChangeEvent e)
             {
-                lifeRunner.setRandomPercentageOfBoardCells(slider.getValue());
+                if (!slider.getValueIsAdjusting())
+                {
+                    lifeRunner.setRandomPercentageOfBoardCells(slider.getValue());
+                    randomise.setLabel("randomise (" + slider.getValue() + "%)");
+                }
             }
         });
     }
@@ -104,7 +109,7 @@ public class LifeGuiRenderer
     private void setControlPanel(Container container, JPanel controlPanel)
     {
         controlPanel.setPreferredSize(new Dimension(controlPanelWidth, controlPanelHeight));
-        controlPanel.setLayout(new GridLayout(9,1));
+        controlPanel.setLayout(new GridLayout(9, 1));
 
         controlPanel.add(new JLabel("generations:"));
         controlPanel.add(generations);
