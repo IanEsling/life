@@ -6,7 +6,7 @@ public class LifeRunner
 {
     private GameBoard board;
     private GameCanvas canvas;
-    Integer percentageOfBoardCells = 10;
+    public Integer percentageOfBoardCells = 10;
     boolean gameIsRunning = false;
     GameRunner gameRunner = new GameRunner();
     Thread gameRunningThread;
@@ -68,7 +68,7 @@ public class LifeRunner
         percentageOfBoardCells = value;
     }
 
-    void setRandomCellsAlive()
+    public void setRandomCellsAlive()
     {
         for (Cell cell : board.getCells())
         {

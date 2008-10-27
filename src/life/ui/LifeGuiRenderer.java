@@ -102,7 +102,7 @@ public class LifeGuiRenderer
 
     void setMainWindow(Container container)
     {
-        container.setSize(canvasPanel.getWidth() + 400, canvasPanel.getHeight() + 30);
+        container.setSize(canvasPanel.getWidth() + 400, canvasPanel.getHeight() + 60);
         container.setVisible(true);
     }
 

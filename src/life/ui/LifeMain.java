@@ -13,7 +13,7 @@ public class LifeMain
             UIManager.getSystemLookAndFeelClassName());
         JFrame app = new JFrame();
         app.setLayout(new FlowLayout());
-        app.setSize(700,500);
+        app.setSize(700,600);
         renderGameComponents(app);
         app.setTitle("Game Of Life");
     }

@@ -83,46 +83,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameBoard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="-6.536313">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CellListener.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/board/CellListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.742268">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameCanvas.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/board/GameCanvas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="11" selection-start="629" selection-end="629" vertical-scroll-proportion="2.226804">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0927835">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LifeMain.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="68" selection-start="273" selection-end="273" vertical-scroll-proportion="0.8882682">
+            <state line="10" column="55" selection-start="273" selection-end="363" vertical-scroll-proportion="0.23662551">
               <folding />
             </state>
           </provider>
@@ -131,7 +95,7 @@
       <file leaf-file-name="LayoutManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/LayoutManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="1.8556701">
+            <state line="25" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.035928145">
               <folding />
             </state>
           </provider>
@@ -140,25 +104,61 @@
       <file leaf-file-name="LifeApplet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="36" selection-start="214" selection-end="214" vertical-scroll-proportion="1.113402">
+            <state line="24" column="20" selection-start="642" selection-end="642" vertical-scroll-proportion="0.71193415">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LifeGuiRenderer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestGameCanvas.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="79" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6399177">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCellImage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/life/TestCellImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.2962963">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameCanvas.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/life/board/GameCanvas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="19" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.962963">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellImage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="0.4814815">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LifeGuiRenderer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeGuiRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="17" selection-start="2070" selection-end="2070" vertical-scroll-proportion="2.1340206">
+            <state line="104" column="84" selection-start="3270" selection-end="3270" vertical-scroll-proportion="0.43004116">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dictionary.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/util/Dictionary.java">
+      <file leaf-file-name="TestRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/life/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.8917526">
+            <state line="17" column="83" selection-start="391" selection-end="391" vertical-scroll-proportion="0.3271605">
               <folding />
             </state>
           </provider>
@@ -167,7 +167,7 @@
       <file leaf-file-name="LifeRunner.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="13" selection-start="2043" selection-end="2043" vertical-scroll-proportion="2.0257733">
+            <state line="10" column="48" selection-start="254" selection-end="254" vertical-scroll-proportion="0.37037036">
               <folding />
             </state>
           </provider>
@@ -242,89 +242,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/test/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/media/idea/life/src" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life/ui" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life/rules" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/media/idea/life/src/life/board" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -348,16 +270,20 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -367,9 +293,48 @@
       <recent name="life" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LifeMain">
-    <tempConfiguration default="false" name="LifeMain" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" value="life.ui.LifeMain" />
+  <component name="RunManager" selected="JUnit.All in life">
+    <tempConfiguration default="false" name="All in life" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <module name="life" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </tempConfiguration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" value="life.Life" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" value="" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -378,14 +343,41 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="life" />
+      <module name="" />
       <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
       </method>
-    </tempConfiguration>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -415,68 +407,8 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" value="life.Life" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.LifeMain" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in life" />
     </list>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
@@ -535,7 +467,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" order="8" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24974093" order="1" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274648" order="1" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55457747" order="3" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
@@ -547,12 +479,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30259067" order="0" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30259067" order="0" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55985916" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55985916" order="2" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
@@ -624,58 +556,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/life/rules/StayTheSameIfTwoOrThreeNeighboursRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="206" selection-end="206" vertical-scroll-proportion="0.35714287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestCellColours.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="52" selection-start="432" selection-end="582" vertical-scroll-proportion="0.03468208">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestGameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="34" selection-start="906" selection-end="906" vertical-scroll-proportion="0.035714287">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/life/rules/DieIfLessThanTwoLiveNeighboursRule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="1.3917526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="38" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0927835">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/board/CellListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.742268">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="-6.536313">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0927835">
           <folding />
         </state>
       </provider>
@@ -687,51 +570,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/LayoutManager.java">
+    <entry file="file://$PROJECT_DIR$/src/life/board/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="1.8556701">
+        <state line="18" column="12" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/CellListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="123" selection-end="123" vertical-scroll-proportion="0.742268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.035714287">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/util/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.8917526">
+        <state line="32" column="0" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.035714287">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/board/GameCanvas.java">
+    <entry file="file://$PROJECT_DIR$/test/life/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="11" selection-start="629" selection-end="629" vertical-scroll-proportion="2.226804">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="214" selection-end="214" vertical-scroll-proportion="1.113402">
+        <state line="17" column="83" selection-start="391" selection-end="391" vertical-scroll-proportion="0.3271605">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/ui/LifeRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="13" selection-start="2043" selection-end="2043" vertical-scroll-proportion="2.0257733">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="68" selection-start="273" selection-end="273" vertical-scroll-proportion="0.8882682">
+        <state line="10" column="48" selection-start="254" selection-end="254" vertical-scroll-proportion="0.37037036">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/ui/LifeGuiRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="17" selection-start="2070" selection-end="2070" vertical-scroll-proportion="2.1340206">
+        <state line="104" column="84" selection-start="3270" selection-end="3270" vertical-scroll-proportion="0.43004116">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="55" selection-start="273" selection-end="363" vertical-scroll-proportion="0.23662551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/jdk1.6.0_02/src.zip!/java/awt/LayoutManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.035928145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/ui/LifeApplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="20" selection-start="642" selection-end="642" vertical-scroll-proportion="0.71193415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/TestGameCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="79" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6399177">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/TestCellImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="9" selection-start="164" selection-end="164" vertical-scroll-proportion="0.2962963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="4" selection-start="281" selection-end="281" vertical-scroll-proportion="0.4814815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/life/board/GameCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.962963">
           <folding />
         </state>
       </provider>

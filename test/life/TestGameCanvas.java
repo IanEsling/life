@@ -32,7 +32,7 @@ public class TestGameCanvas
         {
             if (i == 13)
             {
-                assertEquals("pixel not turned on for cell at 2,2", Color.white.getRGB(), testee.getImage().getRGB(1,1));
+                assertEquals("pixel not turned on for cell at 2,2", Color.green.getRGB(), testee.getImage().getRGB(1,1));
             }
             else
             {

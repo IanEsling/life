@@ -32,7 +32,7 @@ public class TestCellImage
             {
                 if (i == 1 && j == 1)
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.white.getRGB(), canvas.getImage().getRGB(i, j));
+                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.green.getRGB(), canvas.getImage().getRGB(i, j));
                 }
                 else
                 {
@@ -57,7 +57,7 @@ public class TestCellImage
             {
                 if (((i == 2 || i == 3) && (j == 2 || j == 3)) || ((i == 16 || i == 17) && (j == 16 || j == 17)))
                 {
-                    assertEquals("canvas pixel not white at " + i + "," + j, Color.white.getRGB(), canvas.getImage().getRGB(i, j));
+                    assertEquals("canvas pixel not white at " + i + "," + j, Color.green.getRGB(), canvas.getImage().getRGB(i, j));
                 }
                 else
                 {

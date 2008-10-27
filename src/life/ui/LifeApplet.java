@@ -9,8 +9,10 @@ public class LifeApplet extends JApplet
 {
     LifeGuiRenderer guiRenderer;
     
-    public LifeApplet()
+    public LifeApplet() throws ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException
     {
+        UIManager.setLookAndFeel(
+            UIManager.getSystemLookAndFeelClassName());
         setLayout(new FlowLayout());
         renderGameComponents();
         setVisible(true);
