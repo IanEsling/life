@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  */
-class CellImage implements CellListener
+class JavaCellImage implements CellListener
 {
     BufferedImage canvasImage;
     Cell cell;
@@ -20,15 +20,15 @@ class CellImage implements CellListener
 
         Pixel(int row, int col)
         {
-            this.x = (cell.getRow() - 1) * GameCanvas.pixelsSquarePerCell + row;
-            this.y = (cell.getColumn() - 1) * GameCanvas.pixelsSquarePerCell + col;
+            this.x = (cell.getRow() - 1) * JavaGameCanvas.pixelsSquarePerCell + row;
+            this.y = (cell.getColumn() - 1) * JavaGameCanvas.pixelsSquarePerCell + col;
         }
     }
 
-    CellImage(Cell cell, GameCanvas gameCanvas, GameBoard board)
+    JavaCellImage(Cell cell, JavaGameCanvas javaGameCanvas, GameBoard board)
     {
         this.cell = cell;
-        this.canvasImage = gameCanvas.getImage();
+        this.canvasImage = javaGameCanvas.getImage();
         cell.addCellListener(this);
         setPixels();
         board.addTickListener(new TickListener(){
@@ -42,8 +42,8 @@ class CellImage implements CellListener
     void boardTicker()
     {
         ticksInState++;
-        if (cell.isAlive() && GameCanvas.colourTransitions.keySet().contains(ticksInState))
-            paintPixels(GameCanvas.colourTransitions.get(ticksInState));
+        if (cell.isAlive() && JavaGameCanvas.colourTransitions.keySet().contains(ticksInState))
+            paintPixels(JavaGameCanvas.colourTransitions.get(ticksInState));
     }
 
     public void listenedToCellHasComeToLife()
@@ -60,9 +60,9 @@ class CellImage implements CellListener
 
     private void setPixels()
     {
-        for (int row = 0; row < GameCanvas.pixelsSquarePerCell; row++)
+        for (int row = 0; row < JavaGameCanvas.pixelsSquarePerCell; row++)
         {
-            for (int col = 0; col < GameCanvas.pixelsSquarePerCell; col++)
+            for (int col = 0; col < JavaGameCanvas.pixelsSquarePerCell; col++)
             {
                 pixels.add(new Pixel(row, col));
             }

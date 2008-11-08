@@ -7,16 +7,15 @@ public class GroovyCellFactory implements CellFactory {
   int totalRows, totalColumns
   List<Cell> cells
 
-  public GroovyCellFactory(GameBoard board) {
+  public GroovyCellFactory(GroovyGameBoard board) {
     totalColumns = board.totalColumns
     totalRows = board.totalRows
     cells = board.cells
   }
 
-  public List<Cell> createGameBoardCells() {    
+  public void createGameBoardCells() {
     createCells();
     makeCellsNeighbourAware();
-    return cells;
   }
 
   private void createCells() {

@@ -9,11 +9,11 @@ import static junit.framework.Assert.*;
  */
 public class TestRunner
 {
-    LifeRunner testee;
+    JavaLifeRunner testee;
     @Test
     public void liveCellCountWhenRandomising()
     {
-        testee = new LifeRunner();
+        testee = new JavaLifeRunner();
         testee.setRandomCellsAlive();
         assertEquals(((GameBoard.defaultRows* GameBoard.defaultColumns)/100*testee.percentageOfBoardCells),
             numberOfLiveCells());

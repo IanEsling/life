@@ -7,17 +7,17 @@ import java.util.Map;
 
 /**
  */
-public class GameCanvas extends Canvas {
+public class JavaGameCanvas extends Canvas {
     BufferedImage canvasImage;
     public static int pixelsSquarePerCell = 2;
     static Map<Integer, Color> colourTransitions = new HashMap<Integer, Color>();
 
-    public GameCanvas(GameBoard board) {
+    public JavaGameCanvas(GameBoard board) {
         setUp(board);
     }
 
-    public GameCanvas(GameBoard board, int pixelsSquarePerCell) {
-        GameCanvas.pixelsSquarePerCell = pixelsSquarePerCell;
+    public JavaGameCanvas(GameBoard board, int pixelsSquarePerCell) {
+        JavaGameCanvas.pixelsSquarePerCell = pixelsSquarePerCell;
         setUp(board);
     }
 
@@ -38,7 +38,7 @@ public class GameCanvas extends Canvas {
 
     public void setCellImages(GameBoard board) {
         for (Cell cell : board.getCells()) {
-            new CellImage(cell, this, board);
+            new JavaCellImage(cell, this, board);
         }
     }
 

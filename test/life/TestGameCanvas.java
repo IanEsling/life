@@ -11,21 +11,21 @@ import life.board.*;
  */
 public class TestGameCanvas
 {
-    GameCanvas testee;
+    JavaGameCanvas testee;
 
     @Test
     public void canvasHasImage()
     {
-        testee = new GameCanvas(new GameBoard(10, 12), 1);
-        assertEquals("canvas wrong width", 12, testee.getWidth());
-        assertEquals("canvas wrong height", 10, testee.getHeight());
+        testee = new JavaGameCanvas(new GameBoard(10, 12), 1);
+        assertEquals("canvasJava wrong width", 12, testee.getWidth());
+        assertEquals("canvasJava wrong height", 10, testee.getHeight());
     }
 
     @Test
     public void canvasPixels()
     {
         GameBoard board = new GameBoard(10, 12);
-        testee = new GameCanvas(board, 1);
+        testee = new JavaGameCanvas(board, 1);
         board.getCell(new Cell(2, 2)).setAlive(true);
         testee.setCellImages(board);
         for (int i = 1; i < board.getCells().size(); i++)

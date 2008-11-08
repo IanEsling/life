@@ -1,18 +1,22 @@
 package life.ui;
 
-import life.board.*;
+import life.board.CellListener;
+import life.board.GameBoard;
+import life.board.JavaGameCanvas;
+import life.board.TickListener;
 
 import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Properties;
 
 /**
  */
-public class LifeGuiRenderer
-{
-    LifeRunner lifeRunner;
+public class JavaLifeGuiRenderer {
+    JavaLifeRunner lifeRunner;
     JPanel canvasPanel = new JPanel(new FlowLayout());
     JPanel controlPanel = new JPanel(new FlowLayout());
     JSlider slider;
@@ -23,21 +27,18 @@ public class LifeGuiRenderer
     public final static int mainWindowHeight = 500, mainWindowWidth = 500, controlPanelWidth = 150,
             controlPanelHeight = 250;
 
-    public LifeGuiRenderer(Container frame, LifeRunner lifeRunner)
-    {
+    public JavaLifeGuiRenderer(Container frame, JavaLifeRunner lifeRunner) {
         this.lifeRunner = lifeRunner;
         createComponents();
         addComponents(frame);
     }
 
-    void addComponents(Container frame)
-    {
+    void addComponents(Container frame) {
         addCanvas(frame, canvasPanel);
         setControlPanel(frame, controlPanel);
     }
 
-    private void createComponents()
-    {
+    private void createComponents() {
         createTextFields();
         createButtons();
         createSlider();
@@ -46,8 +47,7 @@ public class LifeGuiRenderer
         lifeRunner.listenForBoardTicks(liveCells);
     }
 
-    private void createSlider()
-    {
+    private void createSlider() {
         slider = new JSlider(0, 100, lifeRunner.percentageOfBoardCells);
         Properties labels = new Properties();
         labels.put(0, new JLabel("0%"));
@@ -56,12 +56,9 @@ public class LifeGuiRenderer
         slider.setLabelTable(labels);
         slider.setPaintLabels(true);
 
-        slider.addChangeListener(new ChangeListener()
-        {
-            public void stateChanged(ChangeEvent e)
-            {
-                if (!slider.getValueIsAdjusting())
-                {
+        slider.addChangeListener(new ChangeListener() {
+            public void stateChanged(ChangeEvent e) {
+                if (!slider.getValueIsAdjusting()) {
                     lifeRunner.setRandomPercentageOfBoardCells(slider.getValue());
                     randomise.setLabel("randomise (" + slider.getValue() + "%)");
                 }
@@ -69,16 +66,14 @@ public class LifeGuiRenderer
         });
     }
 
-    private void randomiseCellsAndResetComponents()
-    {
+    private void randomiseCellsAndResetComponents() {
         lifeRunner.setRandomCellsAlive();
         canvas().repaint();
         liveCells.setText();
         generations.reset();
     }
 
-    private void createButtons()
-    {
+    private void createButtons() {
         startButton = new Button("start");
         stopButton = new Button("stop");
         randomise = new Button("randomise");
@@ -86,28 +81,26 @@ public class LifeGuiRenderer
         randomise.addActionListener(new RandomiseListener());
         stopButton.addActionListener(new StopListener());
         startButton.addActionListener(new StartListener());
-        closeButton.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e) {System.exit(0);}
+        closeButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
         });
     }
 
-    private void createTextFields()
-    {
+    private void createTextFields() {
         generations = new BoardListeningTextField(numberOfTicks.toString(), 6);
         liveCells = new CellListeningTextField(numberOfLiveCells.toString(), 6);
         generations.setEditable(false);
         liveCells.setEditable(false);
     }
 
-    void setMainWindow(Container container)
-    {
+    void setMainWindow(Container container) {
         container.setSize(canvasPanel.getWidth() + 400, canvasPanel.getHeight() + 60);
         container.setVisible(true);
     }
 
-    private void setControlPanel(Container container, JPanel controlPanel)
-    {
+    private void setControlPanel(Container container, JPanel controlPanel) {
         controlPanel.setPreferredSize(new Dimension(controlPanelWidth, controlPanelHeight));
         controlPanel.setLayout(new GridLayout(9, 1));
 
@@ -124,103 +117,90 @@ public class LifeGuiRenderer
         container.add(controlPanel);
     }
 
-    private void addCanvas(Container container, JPanel canvasPanel)
-    {
+    private void addCanvas(Container container, JPanel canvasPanel) {
         canvasPanel.setSize(canvas().getWidth(), canvas().getHeight());
         canvasPanel.add(canvas());
         container.add(canvasPanel);
     }
 
-    void setRandomCellsAlive()
-    {
+    void setRandomCellsAlive() {
         lifeRunner.setRandomCellsAlive();
         setLiveCellText();
     }
 
-    GameCanvas canvas()
-    {
+    JavaGameCanvas canvas() {
         return lifeRunner.getCanvas();
     }
 
-    GameBoard getBoard()
-    {
+    GameBoard getBoard() {
         return lifeRunner.getBoard();
     }
 
-    class BoardListeningTextField extends JTextField implements TickListener
-    {
+    class BoardListeningTextField extends JTextField implements TickListener {
         Integer generations = 0;
 
-        BoardListeningTextField(String text, Integer cols)
-        {
+        BoardListeningTextField(String text, Integer cols) {
             super(text, cols);
         }
 
-        public void setText()
-        {
+        public void setText() {
             setText(generations.toString());
         }
 
-        public void reset()
-        {
+        public void reset() {
             generations = 0;
             setText();
         }
 
-        public void boardHasTicked()
-        {
+        public void boardHasTicked() {
             generations++;
             setText();
         }
     }
 
-    class CellListeningTextField extends JTextField implements CellListener, TickListener
-    {
+    class CellListeningTextField extends JTextField implements CellListener, TickListener {
         Integer total = 0;
 
-        CellListeningTextField(String text, Integer cols)
-        {
+        CellListeningTextField(String text, Integer cols) {
             super(text, cols);
         }
 
-        public void setText()
-        {
+        public void setText() {
             setText(total.toString());
         }
 
-        public void listenedToCellHasComeToLife() {total++;}
+        public void listenedToCellHasComeToLife() {
+            total++;
+        }
 
-        public void listenedToCellHasDied() {total--;}
+        public void listenedToCellHasDied() {
+            total--;
+        }
 
-        public void boardHasTicked() {setText();}
+        public void boardHasTicked() {
+            setText();
+        }
     }
 
-    class StopListener implements ActionListener
-    {
-        public void actionPerformed(ActionEvent e)
-        {
+    class StopListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
             lifeRunner.stopGame();
         }
     }
 
-    class StartListener implements ActionListener
-    {
-        public void actionPerformed(ActionEvent e)
-        {
+    class StartListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
             lifeRunner.startGame();
         }
     }
 
-    class RandomiseListener implements ActionListener
-    {
-        public void actionPerformed(ActionEvent e)
-        {
+    class RandomiseListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
             randomiseCellsAndResetComponents();
         }
     }
 
-    private void setLiveCellText()
-    {
+    private void setLiveCellText() {
         liveCells.setText();
     }
 }

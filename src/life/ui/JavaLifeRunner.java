@@ -2,19 +2,19 @@ package life.ui;
 
 import life.board.*;
 
-public class LifeRunner
+public class JavaLifeRunner
 {
     private GameBoard board;
-    private GameCanvas canvas;
+    private JavaGameCanvas canvas;
     public Integer percentageOfBoardCells = 10;
     boolean gameIsRunning = false;
     GameRunner gameRunner = new GameRunner();
     Thread gameRunningThread;
 
-    public LifeRunner()
+    public JavaLifeRunner()
     {
         board = new GameBoard();
-        canvas = new GameCanvas(board);
+        canvas = new JavaGameCanvas(board);
     }
 
     void listenForBoardTicks(TickListener listener)
@@ -100,7 +100,7 @@ public class LifeRunner
         return board;
     }
 
-    public GameCanvas getCanvas()
+    public JavaGameCanvas getCanvas()
     {
         return canvas;
     }

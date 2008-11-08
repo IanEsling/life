@@ -1,39 +1,41 @@
-package life.board;
+package life.board
 
-import life.rules.*;
-
-import java.util.*;
+import life.rules.DieIfLessThanTwoLiveNeighboursRule
+import life.rules.DieIfMoreThanThreeLiveNeighboursRule
+import life.rules.ComeToLifeIfExactlyThreeLiveNeighboursRule
+import life.rules.StayTheSameIfTwoOrThreeNeighboursRule
+import life.rules.RuleHandler
 
 /**
  */
-public class GameBoard
-{
-    CellFactory cellFactory;
+
+public class GroovyGameBoard {
+          CellFactory cellFactory;
     List<Cell> board = new ArrayList<Cell>();
     int totalRows, totalColumns;
     public List<RuleHandler> rules = new ArrayList<RuleHandler>();
-    List<TickListener> tickListeners = new ArrayList<TickListener>();
+    List<Closure> tickListeners = new ArrayList<Closure>();
     public final static int defaultRows = 300, defaultColumns = 300;
 
-    public GameBoard()
+    public GroovyGameBoard()
     {
         this(defaultRows, defaultColumns);
     }
 
-    public GameBoard(int rows, int columns)
+    public GroovyGameBoard(int rows, int columns)
     {
         totalColumns = columns;
         totalRows = rows;
-        cellFactory = new JavaCellFactory(this);
+        cellFactory = new GroovyCellFactory(this);
         cellFactory.createGameBoardCells();
         setRules();
     }
 
-    public void addTickListener(TickListener listener)
+    public void addTickListener(Closure c)
     {
-        tickListeners.add(listener);
+        tickListeners.add(c);
     }
-    
+
     protected void setRules()
     {
         setDieIfLessThanTwoLiveNeighboursRule();
@@ -49,18 +51,11 @@ public class GameBoard
 
     public void tick()
     {
-        for (Cell cell : board)
-        {
-            applyRules(cell);
-        }
-        for (Cell cell : board)
-        {
-            cell.applyNewState();
-        }
-        for (TickListener listener : tickListeners)
-        {
-            listener.boardHasTicked();
-        }
+        board.each {cell-> applyRules(cell)}
+
+        board.each {cell-> cell.applyNewState()}
+        
+        tickListeners.each {c-> c.call()}
     }
 
     private void applyRules(Cell cell)
@@ -101,13 +96,5 @@ public class GameBoard
     public void setStayTheSameIfTwoOrThreeNeighboursRule()
     {
         rules.add(new StayTheSameIfTwoOrThreeNeighboursRule());
-    }
-
-    public int getTotalRows() {
-        return totalRows;
-    }
-
-    public int getTotalColumns() {
-        return totalColumns;
     }
 }

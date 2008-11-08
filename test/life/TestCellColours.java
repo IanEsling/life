@@ -13,17 +13,17 @@ import java.util.List;
 public class TestCellColours
 {
     GameBoard board;
-    GameCanvas canvas;
+    JavaGameCanvas canvasJava;
     List<Cell> cellDiamond = new ArrayList<Cell>();
 
     @Before
     public void setUpGame()
     {
         board = new GameBoard(10, 10);
-        canvas = new GameCanvas(board, 1);
-        canvas.addColourTransition(10, Color.orange);
-        canvas.addColourTransition(100, Color.red);
-        canvas.addColourTransition(300, Color.blue);
+        canvasJava = new JavaGameCanvas(board, 1);
+        canvasJava.addColourTransition(10, Color.orange);
+        canvasJava.addColourTransition(100, Color.red);
+        canvasJava.addColourTransition(300, Color.blue);
     }
 
     @Before
@@ -40,7 +40,7 @@ public class TestCellColours
     {
         setUpGame();
         setCellDiamondAlive();
-        assertEquals("new alive cell should be green", Color.green.getRGB(), canvas.getImage().getRGB(1, 1));
+        assertEquals("new alive cell should be green", Color.green.getRGB(), canvasJava.getImage().getRGB(1, 1));
     }
 
     private void setCellDiamondAlive()
@@ -60,21 +60,21 @@ public class TestCellColours
         {
             assertTrue("cell not alive after 10 turns", board.getCell(cell).isAlive());
             assertEquals("cell should go orange after being alive for 10 turns",
-                    Color.orange.getRGB(), canvas.getImage().getRGB(cell.getRow()-1, cell.getColumn()-1));
+                    Color.orange.getRGB(), canvasJava.getImage().getRGB(cell.getRow()-1, cell.getColumn()-1));
         }
         tickFor(100);
         for (Cell cell : cellDiamond)
         {
             assertTrue("cell not alive after 100 turns", board.getCell(cell).isAlive());
             assertEquals("cell should go red after being alive for 100 turns",
-                    Color.red.getRGB(), canvas.getImage().getRGB(cell.getRow()-1, cell.getColumn()-1));
+                    Color.red.getRGB(), canvasJava.getImage().getRGB(cell.getRow()-1, cell.getColumn()-1));
         }
         tickFor(300);
         for (Cell cell : cellDiamond)
         {
             assertTrue("cell not alive after 10 turns", board.getCell(cell).isAlive());
             assertEquals("cell should go blue after being alive for 300 turns",
-                    Color.blue.getRGB(), canvas.getImage().getRGB(cell.getRow()-1, cell.getColumn()-1));
+                    Color.blue.getRGB(), canvasJava.getImage().getRGB(cell.getRow()-1, cell.getColumn()-1));
         }
     }
 

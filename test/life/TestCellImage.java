@@ -11,7 +11,7 @@ import life.board.*;
  */
 public class TestCellImage
 {
-    GameCanvas canvas;
+    JavaGameCanvas canvasJava;
     GameBoard board;
 
     @Before
@@ -23,7 +23,7 @@ public class TestCellImage
     @Test
     public void imageUpdatesCanvas()
     {
-        canvas = new GameCanvas(board, 1);
+        canvasJava = new JavaGameCanvas(board, 1);
         board.getCells().get(board.getCells().indexOf(new Cell(2,2))).setAlive(true);
 
         for (int i = 0; i < 12; i++)
@@ -32,11 +32,11 @@ public class TestCellImage
             {
                 if (i == 1 && j == 1)
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.green.getRGB(), canvas.getImage().getRGB(i, j));
+                    assertEquals("canvasJava pixel wrong at " + i + "," + j, Color.green.getRGB(), canvasJava.getImage().getRGB(i, j));
                 }
                 else
                 {
-                    assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getImage().getRGB(i, j));
+                    assertEquals("canvasJava pixel wrong at " + i + "," + j, Color.black.getRGB(), canvasJava.getImage().getRGB(i, j));
                 }
             }
         }
@@ -45,7 +45,7 @@ public class TestCellImage
     @Test
     public void updateMultiplePixels()
     {
-        canvas = new GameCanvas(board, 2);
+        canvasJava = new JavaGameCanvas(board, 2);
         Cell cell1 = board.getCells().get(board.getCells().indexOf(new Cell(2,2)));
         Cell cell2 = board.getCells().get(board.getCells().indexOf(new Cell(9,9)));
         cell1.setAlive(true);
@@ -57,11 +57,11 @@ public class TestCellImage
             {
                 if (((i == 2 || i == 3) && (j == 2 || j == 3)) || ((i == 16 || i == 17) && (j == 16 || j == 17)))
                 {
-                    assertEquals("canvas pixel not white at " + i + "," + j, Color.green.getRGB(), canvas.getImage().getRGB(i, j));
+                    assertEquals("canvasJava pixel not white at " + i + "," + j, Color.green.getRGB(), canvasJava.getImage().getRGB(i, j));
                 }
                 else
                 {
-                    assertEquals("canvas pixel not black at " + i + "," + j, Color.black.getRGB(), canvas.getImage().getRGB(i, j));
+                    assertEquals("canvasJava pixel not black at " + i + "," + j, Color.black.getRGB(), canvasJava.getImage().getRGB(i, j));
                 }
             }
         }
@@ -72,7 +72,7 @@ public class TestCellImage
         {
             for (int j = 0; j < 10; j++)
             {
-                assertEquals("canvas pixel wrong at " + i + "," + j, Color.black.getRGB(), canvas.getImage().getRGB(i, j));
+                assertEquals("canvasJava pixel wrong at " + i + "," + j, Color.black.getRGB(), canvasJava.getImage().getRGB(i, j));
             }
         }
     }

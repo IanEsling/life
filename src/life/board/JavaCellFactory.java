@@ -1,6 +1,5 @@
 package life.board;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,11 +13,10 @@ public class JavaCellFactory implements CellFactory {
         this.board = board;
     }
 
-    public List<Cell> createGameBoardCells() {
-        cells = new ArrayList<Cell>();
+    public void createGameBoardCells() {
+        cells = board.board;
         createCells();
         makeCellsNeighbourAware();
-        return cells;
     }
 
     private void createCells() {

@@ -5,5 +5,5 @@ import java.util.List;
 /**
  */
 public interface CellFactory {
-    List<Cell> createGameBoardCells();
+    void createGameBoardCells();
 }

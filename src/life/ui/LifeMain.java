@@ -1,5 +1,7 @@
 package life.ui;
 
+import life.board.GroovyLifeGuiRenderer;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,8 +21,8 @@ public class LifeMain
 
     private static void renderGameComponents(Container app)
     {
-        LifeGuiRenderer guiRenderer = new LifeGuiRenderer(app, new LifeRunner());
-        guiRenderer.setRandomCellsAlive();
-        guiRenderer.setMainWindow(app);
+        GroovyLifeGuiRenderer guiRendererJava = new GroovyLifeGuiRenderer(app, new GroovyLifeRunner());
+        guiRendererJava.setRandomCellsAlive();
+        guiRendererJava.setMainWindow(app);
     }
 }

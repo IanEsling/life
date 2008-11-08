@@ -7,8 +7,8 @@ import java.awt.*;
  */
 public class LifeApplet extends JApplet
 {
-    LifeGuiRenderer guiRenderer;
-    
+    JavaLifeGuiRenderer guiRendererJava;
+
     public LifeApplet() throws ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException
     {
         UIManager.setLookAndFeel(
@@ -20,12 +20,12 @@ public class LifeApplet extends JApplet
 
     private void renderGameComponents()
     {
-        guiRenderer = new LifeGuiRenderer(this, new LifeRunner());
-        guiRenderer.setRandomCellsAlive();
+        guiRendererJava = new JavaLifeGuiRenderer(this, new JavaLifeRunner());
+        guiRendererJava.setRandomCellsAlive();
     }
 
     public void paint(Graphics g)
     {
-        guiRenderer.canvas().paint(g);
+        guiRendererJava.canvas().paint(g);
     }
 }
