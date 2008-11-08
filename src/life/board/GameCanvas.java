@@ -12,12 +12,12 @@ public class GameCanvas extends Canvas {
     public static int pixelsSquarePerCell = 2;
     static Map<Integer, Color> colourTransitions = new HashMap<Integer, Color>();
 
-    public GameCanvas(GameBoard board, int pixelsSquarePerCell) {
-        GameCanvas.pixelsSquarePerCell = pixelsSquarePerCell;
+    public GameCanvas(GameBoard board) {
         setUp(board);
     }
 
-    public GameCanvas(GameBoard board) {
+    public GameCanvas(GameBoard board, int pixelsSquarePerCell) {
+        GameCanvas.pixelsSquarePerCell = pixelsSquarePerCell;
         setUp(board);
     }
 
