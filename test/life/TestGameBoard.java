@@ -177,9 +177,11 @@ public class TestGameBoard
         }
     }
 
-    @Ignore
+    @Test
     public void cellWithTwoOrThreeLiveNeighboursAliveIsUnchanged()
     {
+        gameboard.setDieIfLessThanTwoLiveNeighboursRule();
+        gameboard.setStayTheSameIfTwoOrThreeNeighboursRule();
         setCell(1, 1);
         setCell(1, 2);
         setCell(1, 3);

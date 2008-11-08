@@ -25,13 +25,13 @@ class CellImage implements CellListener
         }
     }
 
-    CellImage(Cell cell, GameCanvas gameCanvas)
+    CellImage(Cell cell, GameCanvas gameCanvas, GameBoard board)
     {
         this.cell = cell;
         this.canvasImage = gameCanvas.getImage();
         cell.addCellListener(this);
         setPixels();
-        gameCanvas.board.addTickListener(new TickListener(){
+        board.addTickListener(new TickListener(){
             public void boardHasTicked()
             {
                 boardTicker();

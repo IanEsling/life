@@ -27,7 +27,7 @@ public class TestGameCanvas
         GameBoard board = new GameBoard(10, 12);
         testee = new GameCanvas(board, 1);
         board.getCell(new Cell(2, 2)).setAlive(true);
-        testee.paint();
+        testee.setCellImages(board);
         for (int i = 1; i < board.getCells().size(); i++)
         {
             if (i == 13)

@@ -7,8 +7,7 @@ import java.awt.*;
  */
 public class LifeMain
 {
-    public static void main(String[] args) throws InterruptedException, ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException
-    {
+    public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException {
         UIManager.setLookAndFeel(
             UIManager.getSystemLookAndFeelClassName());
         JFrame app = new JFrame();
