@@ -31,15 +31,20 @@ public class TestGameBoard
     @Before
     public void newGameBoard()
     {
-        gameboard = new GameBoard(10, 10)
-        {
-            protected void setRules()
-            {
-                rules = new ArrayList<RuleHandler>();
-            }
-        };
+        gameboard = new RuleWatchingGameBoard(10, 10);
     }
 
+    class RuleWatchingGameBoard extends GameBoard {
+
+        RuleWatchingGameBoard(int rows, int columns) {
+            super(rows, columns);
+        }
+
+        @Override
+        protected void setRules() {
+            rules = new ArrayList<RuleHandler>();
+        }
+    }
 
     @Test
     public void testTickListener()

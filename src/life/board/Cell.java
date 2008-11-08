@@ -115,4 +115,9 @@ public class Cell implements CellListener
         return "Cell row: " + row + ", column: " + column + ", isAlive: " + isAlive() + ", listening to " +
                 listeningCells.size() + " listeningCells";
     }
+
+    public boolean isHere(int row, int column)
+    {
+        return this.row == row && this.column == column;
+    }
 }

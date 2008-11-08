@@ -9,7 +9,7 @@ import java.util.*;
 public class GameBoard
 {
     CellFactory cellFactory;
-    List<Cell> board;
+    List<Cell> board = new ArrayList<Cell>();
     int totalRows, totalColumns;
     public List<RuleHandler> rules = new ArrayList<RuleHandler>();
     List<TickListener> tickListeners = new ArrayList<TickListener>();
@@ -24,8 +24,8 @@ public class GameBoard
     {
         totalColumns = columns;
         totalRows = rows;
-        cellFactory = new CellFactory(this);
-        board = cellFactory.createGameBoardCells();
+        cellFactory = new GroovyCellFactory(this);
+        cellFactory.createGameBoardCells();
         setRules();
     }
 
@@ -103,4 +103,11 @@ public class GameBoard
         rules.add(new StayTheSameIfTwoOrThreeNeighboursRule());
     }
 
+    public int getTotalRows() {
+        return totalRows;
+    }
+
+    public int getTotalColumns() {
+        return totalColumns;
+    }
 }
