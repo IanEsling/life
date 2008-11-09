@@ -1,29 +1,30 @@
 package life
 
 import life.board.Cell
-import life.board.GroovyGameBoard
-import life.board.GroovyGameCanvas
+import life.board.GameBoard
+import life.board.GameCanvas
 import org.junit.Before
 import org.junit.Test
 import static org.junit.Assert.*
 import java.awt.Color
+import life.board.GameCanvas
 
 /**
  */
 
-public class GroovyTestCellImage {
+public class TestCellImage {
 
-  GroovyGameCanvas canvas;
-  GroovyGameBoard board;
+  GameCanvas canvas;
+  GameBoard board;
 
   @Before
   public void setUp() {
-    board = new GroovyGameBoard(10, 12);
+    board = new GameBoard(10, 12);
   }
 
   @Test
   public void imageUpdatesCanvas() {
-    canvas = new GroovyGameCanvas(board, 1);
+    canvas = new GameCanvas(board, 1);
     board.getCells().get(board.getCells().indexOf(new Cell(2, 2))).setAlive(true);
 
     (0..11).each {i->
@@ -40,7 +41,7 @@ public class GroovyTestCellImage {
 
   @Test
   public void updateMultiplePixels() {
-    canvas = new GroovyGameCanvas(board, 2);
+    canvas = new GameCanvas(board, 2);
     Cell cell1 = board.getCells().get(board.getCells().indexOf(new Cell(2, 2)));
     Cell cell2 = board.getCells().get(board.getCells().indexOf(new Cell(9, 9)));
     cell1.setAlive(true);

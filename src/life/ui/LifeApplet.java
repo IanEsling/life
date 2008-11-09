@@ -6,7 +6,7 @@ import java.awt.*;
 /**
  */
 public class LifeApplet extends JApplet {
-    GroovyLifeGuiRenderer guiRenderer;
+    LifeGuiRenderer guiRenderer;
 
     public LifeApplet() throws ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException {
         UIManager.setLookAndFeel(
@@ -17,7 +17,7 @@ public class LifeApplet extends JApplet {
     }
 
     private void renderGameComponents() {
-        guiRenderer = new GroovyLifeGuiRenderer(this, new GroovyLifeRunner());
+        guiRenderer = new LifeGuiRenderer(this, new LifeRunner());
         guiRenderer.setRandomCellsAlive();
     }
 

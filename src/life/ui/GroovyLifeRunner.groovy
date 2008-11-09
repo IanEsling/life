@@ -1,27 +1,31 @@
 package life.ui
 
-import life.board.*
+import life.board.Cell
+import life.board.CellListener
+import life.board.GameBoard
+import life.board.GameCanvas
 
 /**
  */
 
-public class GroovyLifeRunner {
-  GroovyGameBoard board
-  GroovyGameCanvas canvas
+public class LifeRunner {
+  GameBoard board
+  GameCanvas canvas
   Integer percentageOfBoardCells = 10
   Boolean gameIsRunning = false
 
-  public GroovyLifeRunner() {
-    board = new GroovyGameBoard()
-    canvas = new GroovyGameCanvas(board)
+  public LifeRunner() {
+    board = new GameBoard()
+    canvas = new GameCanvas(board)
   }
+
 
   void listenForBoardTicks(Closure c) {
     board.addTickListener(c);
   }
 
   void listenToAllTheGameCells(CellListener listener) {
-    board.getCells().each {Cell cell->
+    board.getCells().each {Cell cell ->
       cell.addCellListener(listener);
     }
   }
@@ -41,7 +45,7 @@ public class GroovyLifeRunner {
   }
 
   public void setRandomCellsAlive() {
-    board.getCells().each {Cell cell->
+    board.getCells().each {Cell cell ->
       cell.setAlive(false)
     }
 
@@ -64,10 +68,9 @@ public class GroovyLifeRunner {
 
 class GameRunner implements Runnable {
 
-  GroovyLifeRunner runner
+  LifeRunner runner
 
-  GameRunner(GroovyLifeRunner runner)
-  {
+  GameRunner(LifeRunner runner) {
     this.runner = runner
   }
 

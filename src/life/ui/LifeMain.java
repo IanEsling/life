@@ -17,7 +17,7 @@ public class LifeMain {
     }
 
     private static void renderGameComponents(Container app) {
-        GroovyLifeGuiRenderer guiRenderer = new GroovyLifeGuiRenderer(app, new GroovyLifeRunner());
+        LifeGuiRenderer guiRenderer = new LifeGuiRenderer(app, new LifeRunner());
         guiRenderer.setRandomCellsAlive();
         guiRenderer.setMainWindow(app);
     }

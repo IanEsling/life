@@ -8,17 +8,19 @@ import javax.swing.JSlider
 import javax.swing.JTextField
 import javax.swing.event.ChangeEvent
 import javax.swing.event.ChangeListener
-import life.ui.GroovyLifeRunner
-import life.board.GroovyGameCanvas
-import life.board.GroovyGameBoard
+import life.ui.LifeRunner
+import life.board.GameCanvas
+import life.board.GameBoard
 import life.board.TickListener
 import life.board.CellListener
+import life.board.GameBoard
+import life.board.GameCanvas
 
 /**
  */
 
-public class GroovyLifeGuiRenderer {
-  GroovyLifeRunner lifeRunner;
+public class LifeGuiRenderer {
+  LifeRunner lifeRunner;
   JPanel canvasPanel = new JPanel(new FlowLayout());
   JPanel controlPanel = new JPanel(new FlowLayout());
   JSlider slider;
@@ -29,11 +31,12 @@ public class GroovyLifeGuiRenderer {
   public final static int mainWindowHeight = 500, mainWindowWidth = 500, controlPanelWidth = 150,
   controlPanelHeight = 250;
 
-  public GroovyLifeGuiRenderer(Container frame, GroovyLifeRunner lifeRunner) {
+  public LifeGuiRenderer(Container frame, LifeRunner lifeRunner) {
     this.lifeRunner = lifeRunner;
     createComponents();
     addComponents(frame);
   }
+
 
   void addComponents(Container frame) {
     addCanvas(frame, canvasPanel);
@@ -119,11 +122,11 @@ public class GroovyLifeGuiRenderer {
     setLiveCellText();
   }
 
-  GroovyGameCanvas canvas() {
+  GameCanvas canvas() {
     return lifeRunner.canvas
   }
 
-  GroovyGameBoard getBoard() {
+  GameBoard getBoard() {
     return lifeRunner.board
   }
 
@@ -180,10 +183,10 @@ class CellListeningTextField extends JTextField implements CellListener, TickLis
 
 class SliderChangeListener implements ChangeListener {
   JSlider slider
-  GroovyLifeRunner lifeRunner
+  LifeRunner lifeRunner
   Button randomise
 
-  SliderChangeListener(JSlider slider, GroovyLifeRunner lifeRunner, Button randomise) {
+  SliderChangeListener(JSlider slider, LifeRunner lifeRunner, Button randomise) {
     this.slider = slider
     this.lifeRunner = lifeRunner
     this.randomise = randomise

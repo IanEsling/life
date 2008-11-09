@@ -3,17 +3,18 @@ package life.board
 import java.awt.Color
 import java.awt.image.BufferedImage
 
+
 /**
  */
 
-public class GroovyCellImage implements CellListener {
+public class CellImage implements CellListener {
   BufferedImage canvasImage;
   Cell cell;
   List pixels = new ArrayList();
   int ticksInState;
-  def pixelArea = GroovyGameCanvas.pixelsSquarePerCell
+  def pixelArea = GameCanvas.pixelsSquarePerCell
 
-  GroovyCellImage(Cell cell, GroovyGameCanvas gameCanvas, GroovyGameBoard board) {
+  CellImage(Cell cell, GameCanvas gameCanvas, GameBoard board) {
     this.cell = cell;
     this.canvasImage = gameCanvas.getImage();
     cell.addCellListener(this);
@@ -23,8 +24,8 @@ public class GroovyCellImage implements CellListener {
 
   void boardTicker() {
     ticksInState++;
-    if (cell.isAlive() && GroovyGameCanvas.colourTransitions.keySet().contains(ticksInState))
-      paintPixels(GroovyGameCanvas.colourTransitions.get(ticksInState));
+    if (cell.isAlive() && GameCanvas.colourTransitions.keySet().contains(ticksInState))
+      paintPixels(GameCanvas.colourTransitions.get(ticksInState));
   }
 
   public void listenedToCellHasComeToLife() {
@@ -38,8 +39,8 @@ public class GroovyCellImage implements CellListener {
   }
 
   private void setPixels() {
-    (0..pixelArea-1).each {row ->
-      (0..pixelArea-1).each {column ->
+    (0..pixelArea - 1).each {row ->
+      (0..pixelArea - 1).each {column ->
         pixels.add(new Pixel(cell, pixelArea, row, column))
       }
     }

@@ -2,26 +2,27 @@ package life
 
 import java.awt.Color
 import life.board.Cell
-import life.board.GroovyGameBoard
-import life.board.GroovyGameCanvas
+import life.board.GameBoard
+import life.board.GameCanvas
 import static org.junit.Assert.assertEquals
 import static org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
+import life.board.GameCanvas
 
 /**
  */
 
-public class GroovyTestCellColours {
+public class TestCellColours {
 
-  GroovyGameBoard board;
-  GroovyGameCanvas canvas;
+  GameBoard board;
+  GameCanvas canvas;
   List<Cell> cellDiamond = new ArrayList<Cell>();
 
   @Before
   public void setUpGame() {
-    board = new GroovyGameBoard(10, 10);
-    canvas = new GroovyGameCanvas(board, 1);
+    board = new GameBoard(10, 10);
+    canvas = new GameCanvas(board, 1);
   }
 
   @Before

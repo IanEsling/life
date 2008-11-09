@@ -1,22 +1,23 @@
 package life
 
 import life.board.Cell
-import life.board.GroovyGameBoard
-import life.ui.GroovyLifeRunner
+import life.board.GameBoard
+import life.ui.LifeRunner
 import static org.junit.Assert.assertEquals
 import org.junit.Test
+import life.board.GameBoard
 
 /**
  */
 
-public class GroovyTestRunner {
-  GroovyLifeRunner testee;
+public class TestRunner {
+  LifeRunner testee;
 
   @Test
   public void liveCellCountWhenRandomising() {
-    testee = new GroovyLifeRunner();
+    testee = new LifeRunner();
     testee.setRandomCellsAlive();
-    assertEquals((int)((GroovyGameBoard.defaultRows * GroovyGameBoard.defaultColumns) / 100 * testee.percentageOfBoardCells),
+    assertEquals((int)((GameBoard.defaultRows * GameBoard.defaultColumns) / 100 * testee.percentageOfBoardCells),
             numberOfLiveCells());
   }
 

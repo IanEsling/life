@@ -1,20 +1,21 @@
 package life
 
 import life.board.Cell
-import life.board.GroovyGameBoard
+import life.board.GameBoard
 import life.rules.RuleHandler
 import org.junit.Before
 import org.junit.Test
 import static org.junit.Assert.*
 import life.board.CellNotFoundException
 import org.junit.Ignore
+import life.board.GameBoard
 
 /**
  */
 
-public class GroovyTestGameBoard {
+public class TestGameBoard {
 
-  GroovyGameBoard gameboard;
+  GameBoard gameboard;
   List<Cell> liveCells;
   int ticks = 0;
 
@@ -56,7 +57,7 @@ public class GroovyTestGameBoard {
   //useful to see range of random cells chose
   public void randomCells() {
     List<Integer> results = new ArrayList<Integer>();
-    gameboard = new GroovyGameBoard(100, 100);
+    gameboard = new GameBoard(100, 100);
     for (int i = 0; i < gameboard.getCells().size() / 23; i++) {
       int cell = (int) (Math.random() * gameboard.getCells().size());
       results.add(cell);
@@ -187,7 +188,7 @@ public class GroovyTestGameBoard {
   }
 }
 
-class RuleWatchingGameBoard extends GroovyGameBoard {
+class RuleWatchingGameBoard extends GameBoard {
 
   RuleWatchingGameBoard(int rows, int columns) {
     super(rows, columns);
