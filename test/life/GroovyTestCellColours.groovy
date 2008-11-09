@@ -40,8 +40,8 @@ public class GroovyTestCellColours {
   }
 
   private void setCellDiamondAlive() {
-    for (Cell cell: cellDiamond) {
-      setCellAlive(cell.getRow(), cell.getColumn());
+    cellDiamond.each {Cell cell ->
+      setCellAlive(cell);
     }
   }
 
@@ -49,31 +49,30 @@ public class GroovyTestCellColours {
   public void cellGoesGreenAfterBeingAliveForTenTicks() {
     setCellDiamondAlive();
     tickFor(10);
-    for (Cell cell: cellDiamond) {
+    cellDiamond.each {Cell cell ->
       assertTrue("cell not alive after 10 turns", board.getCell(cell).isAlive());
       assertEquals("cell should go orange after being alive for 10 turns",
               Color.orange.getRGB(), canvas.getImage().getRGB(cell.getRow() - 1, cell.getColumn() - 1));
     }
     tickFor(100);
-    for (Cell cell: cellDiamond) {
+    cellDiamond.each {Cell cell ->
       assertTrue("cell not alive after 100 turns", board.getCell(cell).isAlive());
       assertEquals("cell should go red after being alive for 100 turns",
               Color.red.getRGB(), canvas.getImage().getRGB(cell.getRow() - 1, cell.getColumn() - 1));
     }
     tickFor(300);
-    for (Cell cell: cellDiamond) {
+    cellDiamond.each {Cell cell ->
       assertTrue("cell not alive after 10 turns", board.getCell(cell).isAlive());
       assertEquals("cell should go blue after being alive for 300 turns",
               Color.blue.getRGB(), canvas.getImage().getRGB(cell.getRow() - 1, cell.getColumn() - 1));
     }
   }
 
-  private void tickFor(int ticks) {
-    for (int i = 1; i <= ticks; i++) {
+  def tickFor = {ticks ->
+    (1..ticks).each {
       board.tick();
     }
   }
 
-  private void setCellAlive(int x, int y) {board.getCell(new Cell(x, y)).setAlive(true);}
-
+  def setCellAlive = {Cell cell -> board.getCell(cell).setAlive(true)}
 }

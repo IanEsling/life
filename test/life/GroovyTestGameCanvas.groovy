@@ -28,8 +28,8 @@ public class GroovyTestGameCanvas {
         testee = new GroovyGameCanvas(board, 1);
         board.getCell(new Cell(2, 2)).setAlive(true);
         testee.setCellImages(board);
-        for (int i = 1; i < board.getCells().size(); i++)
-        {
+        (1..board.cells.size-1).each
+        {i->
             if (i == 13)
             {
                 assertEquals("pixel not turned on for cell at 2,2", Color.green.getRGB(), testee.getImage().getRGB(1,1));

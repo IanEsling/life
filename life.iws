@@ -94,7 +94,7 @@
       <file leaf-file-name="GroovyTestRunner.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/GroovyTestRunner.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+            <state line="11" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +103,7 @@
       <file leaf-file-name="GroovyTestGameCanvas.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameCanvas.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+            <state line="24" column="28" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +112,7 @@
       <file leaf-file-name="GroovyTestGameBoard.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameBoard.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="40" selection-start="5782" selection-end="5782" vertical-scroll-proportion="0.0">
+            <state line="39" column="43" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,25 +130,25 @@
       <file leaf-file-name="GroovyTestCellImage.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/GroovyTestCellImage.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="70" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
+            <state line="49" column="17" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroovyTestCellColours.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GroovyTestCellColours.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/life/GroovyTestCellColours.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="79" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.071428575">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCell.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestCell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.20734341">
+            <state line="24" column="16" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -337,15 +337,19 @@
       <recent name="life" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.life in Life">
-    <tempConfiguration default="false" name="life in Life" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+  <component name="RunManager" selected="JUnit.GroovyTestCellColours">
+    <tempConfiguration default="false" name="GroovyTestCellColours" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
+      <pattern>
+        <option name="PATTERN" value="life.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
       <module name="Life" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="life" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="MAIN_CLASS_NAME" value="life.GroovyTestCellColours" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -353,7 +357,7 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="ADDITIONAL_CLASS_PATH" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="wholeProject" />
       </option>
       <envs />
       <RunnerSettings RunnerId="Run" />
@@ -423,7 +427,7 @@
       </method>
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.life in Life" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GroovyTestCellColours" />
     </list>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
@@ -663,37 +667,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestRunner.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameCanvas.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameBoard.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="40" selection-start="5782" selection-end="5782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/GroovyGameBoard.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="4" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestCellImage.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="70" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -705,16 +681,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestCellColours.groovy">
+    <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="79" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
+        <state line="24" column="16" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/TestCell.java">
+    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestRunner.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.20734341">
+        <state line="11" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameCanvas.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="28" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameBoard.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="43" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestCellImage.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="17" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestCellColours.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="261" selection-end="261" vertical-scroll-proportion="0.071428575">
           <folding />
         </state>
       </provider>

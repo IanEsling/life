@@ -7,6 +7,7 @@ import org.junit.Before
 import org.junit.Test
 import static org.junit.Assert.*
 import life.board.CellNotFoundException
+import org.junit.Ignore
 
 /**
  */
@@ -36,22 +37,23 @@ public class GroovyTestGameBoard {
   @Test
   public void testTickListener() {
     ticks = 0;
-    gameboard.addTickListener({incrementTick()})
+    gameboard.addTickListener(incrementTick)
     tickFor(10);
     assertEquals(10, ticks);
   }
 
   private void tickFor(int ticks) {
-    for (int i = 0; i < ticks; i++) {
+    (1..ticks).each {
       gameboard.tick();
     }
   }
 
-  void incrementTick() {
+  def incrementTick = {
     ticks++;
   }
 
-  @Test
+  @Ignore
+  //useful to see range of random cells chose
   public void randomCells() {
     List<Integer> results = new ArrayList<Integer>();
     gameboard = new GroovyGameBoard(100, 100);
@@ -136,7 +138,7 @@ public class GroovyTestGameBoard {
   }
 
   private void assertLiveCells() {
-    for (Cell cell: gameboard.getCells()) {
+    gameboard.getCells().each {Cell cell->
       if (liveCells.contains(cell)) {
         assertTrue("cell in liveCells not alive, row " + cell.getRow() + ", column " + cell.getColumn(),
                 cell.isAlive());
@@ -170,17 +172,17 @@ public class GroovyTestGameBoard {
   }
 
   private void assertWholeBoardIsDead() {
-    for (Cell cell: gameboard.getCells()) {
+    gameboard.getCells().each {Cell cell->
       assertEquals("expected cell " + cell.getRow() + ", " + cell.getColumn() + " to be false",
               false, cell.isAlive());
     }
   }
 
   private void assertOnlyCellAlive(int aliveRow, int aliveColumn) {
-    for (Cell cell: gameboard.getCells()) {
+    gameboard.getCells().each {Cell cell->
       assertEquals("cell " + cell.getRow() + ", " + cell.getColumn() + " incorrect" +
               " when checking " + aliveRow + "," + aliveColumn,
-              cell.getRow() == aliveRow && cell.getColumn() == aliveColumn, cell.isAlive());
+              cell.isHere(aliveRow,aliveColumn), cell.isAlive());
     }
   }
 }
