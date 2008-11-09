@@ -1,31 +1,31 @@
-package life;
+package life
 
-import static junit.framework.Assert.assertEquals;
-import org.junit.*;
-
-import java.awt.*;
-
-import life.board.*;
+import life.board.GroovyGameCanvas
+import org.junit.Test
+import life.board.GroovyGameBoard
+import life.board.Cell
+import static org.junit.Assert.*
+import java.awt.Color;
 
 /**
  */
-public class TestGameCanvas
-{
-    JavaGameCanvas testee;
+
+public class GroovyTestGameCanvas {
+      GroovyGameCanvas testee;
 
     @Test
     public void canvasHasImage()
     {
-        testee = new JavaGameCanvas(new GameBoard(10, 12), 1);
-        assertEquals("canvasJava wrong width", 12, testee.getWidth());
-        assertEquals("canvasJava wrong height", 10, testee.getHeight());
+        testee = new GroovyGameCanvas(new GroovyGameBoard(10, 12), 1);
+        assertEquals("canvas wrong width", 12, testee.getWidth());
+        assertEquals("canvas wrong height", 10, testee.getHeight());
     }
 
     @Test
     public void canvasPixels()
     {
-        GameBoard board = new GameBoard(10, 12);
-        testee = new JavaGameCanvas(board, 1);
+        GroovyGameBoard board = new GroovyGameBoard(10, 12);
+        testee = new GroovyGameCanvas(board, 1);
         board.getCell(new Cell(2, 2)).setAlive(true);
         testee.setCellImages(board);
         for (int i = 1; i < board.getCells().size(); i++)
@@ -42,4 +42,5 @@ public class TestGameCanvas
             }
         }
     }
+
 }

@@ -58,7 +58,7 @@ public class GroovyGameBoard {
         tickListeners.each {c-> c.call()}
     }
 
-    private void applyRules(Cell cell)
+    void applyRules(Cell cell)
     {
         for (RuleHandler rule : rules)
         {

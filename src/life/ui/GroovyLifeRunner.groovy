@@ -45,7 +45,7 @@ public class GroovyLifeRunner {
       cell.setAlive(false)
     }
 
-    (0..((board.getCells().size() / 100) * percentageOfBoardCells)).each {
+    (1..((board.getCells().size() / 100) * percentageOfBoardCells)).each {
       boolean aliveCell = true;
       while (aliveCell) {
         Cell cell = getRandomCell();
