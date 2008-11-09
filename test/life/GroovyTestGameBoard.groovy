@@ -1,14 +1,13 @@
 package life
 
 import life.board.Cell
+import life.board.CellNotFoundException
 import life.board.GameBoard
 import life.rules.RuleHandler
-import org.junit.Before
-import org.junit.Test
 import static org.junit.Assert.*
-import life.board.CellNotFoundException
+import org.junit.Before
 import org.junit.Ignore
-import life.board.GameBoard
+import org.junit.Test
 
 /**
  */
@@ -139,7 +138,7 @@ public class TestGameBoard {
   }
 
   private void assertLiveCells() {
-    gameboard.getCells().each {Cell cell->
+    gameboard.getCells().each {Cell cell ->
       if (liveCells.contains(cell)) {
         assertTrue("cell in liveCells not alive, row " + cell.getRow() + ", column " + cell.getColumn(),
                 cell.isAlive());
@@ -173,17 +172,17 @@ public class TestGameBoard {
   }
 
   private void assertWholeBoardIsDead() {
-    gameboard.getCells().each {Cell cell->
+    gameboard.getCells().each {Cell cell ->
       assertEquals("expected cell " + cell.getRow() + ", " + cell.getColumn() + " to be false",
               false, cell.isAlive());
     }
   }
 
   private void assertOnlyCellAlive(int aliveRow, int aliveColumn) {
-    gameboard.getCells().each {Cell cell->
+    gameboard.getCells().each {Cell cell ->
       assertEquals("cell " + cell.getRow() + ", " + cell.getColumn() + " incorrect" +
               " when checking " + aliveRow + "," + aliveColumn,
-              cell.isHere(aliveRow,aliveColumn), cell.isAlive());
+              cell.isHere(aliveRow, aliveColumn), cell.isAlive());
     }
   }
 }

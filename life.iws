@@ -109,10 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellImage.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CellImage.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="102" selection-end="102" vertical-scroll-proportion="0.2644628">
+            <state line="28" column="22" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroovyTestGameBoard.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameBoard.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="45" selection-start="500" selection-end="500" vertical-scroll-proportion="0.7933884">
               <folding />
             </state>
           </provider>
@@ -590,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameBoard.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="43" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/life/TestCellImage.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="17" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
@@ -671,7 +673,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/life/board/CellImage.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="102" selection-end="102" vertical-scroll-proportion="0.2644628">
+        <state line="28" column="22" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/life/GroovyTestGameBoard.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="45" selection-start="500" selection-end="500" vertical-scroll-proportion="0.7933884">
           <folding />
         </state>
       </provider>
