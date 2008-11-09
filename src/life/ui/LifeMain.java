@@ -1,26 +1,22 @@
 package life.ui;
 
-import life.ui.GroovyLifeGuiRenderer;
-
 import javax.swing.*;
 import java.awt.*;
 
 /**
  */
-public class LifeMain
-{
+public class LifeMain {
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, IllegalAccessException, InstantiationException {
         UIManager.setLookAndFeel(
-            UIManager.getSystemLookAndFeelClassName());
+                UIManager.getSystemLookAndFeelClassName());
         JFrame app = new JFrame();
         app.setLayout(new FlowLayout());
-        app.setSize(700,600);
+        app.setSize(700, 600);
         renderGameComponents(app);
         app.setTitle("Game Of Life");
     }
 
-    private static void renderGameComponents(Container app)
-    {
+    private static void renderGameComponents(Container app) {
         GroovyLifeGuiRenderer guiRenderer = new GroovyLifeGuiRenderer(app, new GroovyLifeRunner());
         guiRenderer.setRandomCellsAlive();
         guiRenderer.setMainWindow(app);
