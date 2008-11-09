@@ -1,4 +1,4 @@
-package life.board
+package life.ui
 
 import java.awt.*
 import java.awt.event.ActionListener
@@ -9,6 +9,10 @@ import javax.swing.JTextField
 import javax.swing.event.ChangeEvent
 import javax.swing.event.ChangeListener
 import life.ui.GroovyLifeRunner
+import life.board.GroovyGameCanvas
+import life.board.GroovyGameBoard
+import life.board.TickListener
+import life.board.CellListener
 
 /**
  */
