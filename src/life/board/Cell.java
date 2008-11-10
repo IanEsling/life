@@ -53,21 +53,21 @@ public class Cell implements CellListener
         {
             if (alive)
             {
-                cell.listenedToCellHasComeToLife();
+                cell.cellHasComeToLife();
             }
             else
             {
-                cell.listenedToCellHasDied();
+                cell.cellHasDied();
             }
         }
     }
 
-    public void listenedToCellHasDied()
+    public void cellHasDied()
     {
         --numberOfLiveNeighbours;
     }
 
-    public void listenedToCellHasComeToLife()
+    public void cellHasComeToLife()
     {
         ++numberOfLiveNeighbours;
     }

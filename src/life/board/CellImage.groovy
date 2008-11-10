@@ -8,6 +8,7 @@ import java.awt.image.BufferedImage
  */
 
 public class CellImage implements CellListener {
+
   BufferedImage canvasImage;
   Cell cell;
   List pixels = new ArrayList();
@@ -28,12 +29,12 @@ public class CellImage implements CellListener {
       paintPixels(GameCanvas.colourTransitions.get(ticksInState));
   }
 
-  public void listenedToCellHasComeToLife() {
+  public void cellHasComeToLife() {
     paintPixels(Color.green);
     ticksInState = 0;
   }
 
-  public void listenedToCellHasDied() {
+  public void cellHasDied() {
     paintPixels(Color.black);
     ticksInState = 0;
   }

@@ -158,6 +158,7 @@ class BoardListeningTextField extends JTextField implements TickListener {
 }
 
 class CellListeningTextField extends JTextField implements CellListener, TickListener {
+
   Integer total = 0;
 
   CellListeningTextField(String text, Integer cols) {
@@ -168,11 +169,11 @@ class CellListeningTextField extends JTextField implements CellListener, TickLis
     setText(total.toString());
   }
 
-  public void listenedToCellHasComeToLife() {
+  public void cellHasComeToLife() {
     total++;
   }
 
-  public void listenedToCellHasDied() {
+  public void cellHasDied() {
     total--;
   }
 
